@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6
 header
 {
 	height: 100%;
+	width: 100%;
 	text-align: center;
 	background: #222228;
 	color: #A0A0A1;
@@ -97,6 +98,46 @@ header nav a
 header nav a:hover
 {
 	color: #909091;
+}
+
+/* Responsive */
+
+@media all and (min-width: 1024px)
+{
+	header
+	{
+		position: fixed;
+		width: 24%;
+		text-align: left;
+	}
+
+	header h1, header h2, header #profile-picture, header a, header blockquote
+	{
+		margin-left: 5%;
+	}
+
+	header #profile-picture
+	{
+		margin-top: 2em;
+	}
+
+	#content-wrapper
+	{
+		margin-left: 24%;
+	}
+}
+
+@media all and (min-width: 1300px)
+{
+	header
+	{
+		width: 325px;
+	}
+
+	#content-wrapper
+	{
+		margin-left: 325px;
+	}
 }
 
 /* Cardo */

@@ -21,12 +21,7 @@
 			</ul>
 		</nav>
 		</ul>
-		<ul class="contact-links large">
-			<li><a href="https://twitter.com/dolfsquare"><img src="assets/img/twitter-icon.png" alt="Twitter" /></a></li>
-			<li><a href="https://tooting.intensifi.es/@dolfsquare"><img src="assets/img/mastodon-icon.png" alt="Mastodon" /></a></li>
-			<li><a href="https://www.linkedin.com/in/guillaume-jorandon-b088a5116/"><img src="assets/img/linkedin-icon.png" alt="LinkedIn" /></a></li>
-			<li><a href="https://github.com/dolfinsbizou"><img src="assets/img/github-icon.png" alt="GitHub" /></a></li>
-		</ul>
+		<?php contact_links("large"); ?>
 	</header>
 	<div id="content-wrapper">
 	<section id="about" class="section-odd">
@@ -100,12 +95,7 @@
 			<input type="text" name="comment" id="comment" class="hp" />
 			<input type="submit" value="Envoyer" />
 		</form>
-		<ul class="contact-links narrow">
-			<li><a href="https://twitter.com/dolfsquare"><img src="assets/img/twitter-icon.png" alt="Twitter" /></a></li>
-			<li><a href="https://tooting.intensifi.es/@dolfsquare"><img src="assets/img/mastodon-icon.png" alt="Mastodon" /></a></li>
-			<li><a href="https://www.linkedin.com/in/guillaume-jorandon-b088a5116/"><img src="assets/img/linkedin-icon.png" alt="LinkedIn" /></a></li>
-			<li><a href="https://github.com/dolfinsbizou"><img src="assets/img/github-icon.png" alt="GitHub" /></a></li>
-		</ul>
+		<?php contact_links("narrow"); ?>
 	</aside>
 	<footer>
 		<p>Copyright de mes fesses</p>

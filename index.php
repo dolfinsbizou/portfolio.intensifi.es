@@ -1,5 +1,6 @@
 <?php
 require_once('model/api_keys.php');
+require_once('model/utils.php');
 
 if(isset($_GET['error']))
 {

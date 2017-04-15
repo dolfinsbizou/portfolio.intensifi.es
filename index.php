@@ -17,6 +17,9 @@ if(isset($_GET['error']))
 		case 4:
 			$errorInfo = "Toutes mes excuses. L'envoi de mail est actuellement désactivé. N'hésitez pas à me contacter sur les réseaux sociaux !";
 			break;
+		case 5:
+			$errorInfo = "L'envoi a échoué pour une raison inconnue. Réessayez plus tard ou contactez moi sur les réseaux sociaux.";
+			break;
 		default:
 			$errorInfo = null;
 	}

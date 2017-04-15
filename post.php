@@ -54,7 +54,7 @@ $response = curl_exec($ch);
 
 if($response === FALSE)
 {
-	header('Location: ./?error=4#contact');
+	header('Location: ./?error=5#contact');
 	exit(0);
 }
 

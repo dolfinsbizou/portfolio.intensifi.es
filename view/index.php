@@ -74,6 +74,15 @@
 	</section>
 	<aside id="contact" class="section-even">
 		<h3>Contact</h3>
+		<?php if($errorInfo) { ?>
+		<div class="error-info"><?= $errorInfo ?></div>
+		<?php }
+		else if(isset($_GET['success'])) { ?>
+		<div class="success-info">Message envoyé. Je vais l'examiner et y répondre dans les plus brefs délais.</div>
+		<?php }
+		else if(!$sendmail_enabled) { ?>
+		<div class="warning-info">L'envoi de messages est actuellement désactivé. Je vous invite à me contacter sur les réseaux sociaux.</div>
+		<?php } ?>
 		<form method="post" action="post.php">
 			<span class="field-half">
 			<label for="email">Adresse e-mail</label>

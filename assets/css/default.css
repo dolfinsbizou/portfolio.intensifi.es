@@ -55,6 +55,63 @@ h1, h2, h3, h4, h5, h6
 	margin-right: 0.2em;
 }
 
+.error-info
+{
+	border: 1px solid #AA0000;
+	padding: 1em;
+	text-align: center;
+	color: #AA0000;
+	font-size: 1.2em;
+	background: rgba(255, 0, 0, 0.2);
+	max-width: 50em;
+	margin: auto;
+}
+
+.error-info:before
+{
+	content: '\ea0d';
+	font-family: 'IcoMoon' !important;
+	margin-right: 0.2em;
+}
+
+.warning-info
+{
+	border: 1px solid #777700;
+	padding: 1em;
+	text-align: center;
+	color: #777700;
+	font-size: 1.2em;
+	background: rgba(255, 255, 0, 0.2);
+	max-width: 50em;
+	margin: auto;
+}
+
+.warning-info:before
+{
+	content: '\ea07';
+	font-family: 'IcoMoon' !important;
+	margin-right: 0.2em;
+}
+
+.success-info
+{
+	border: 1px solid #00AA00;
+	padding: 1em;
+	text-align: center;
+	color: #00AA00;
+	font-size: 1.2em;
+	background: rgba(0, 255, 0, 0.2);
+	max-width: 50em;
+	margin: auto;
+}
+
+.success-info:before
+{
+	content: '\ea0c';
+	font-family: 'IcoMoon' !important;
+	margin-right: 0.2em;
+}
+
 /* Header */
 
 header

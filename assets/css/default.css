@@ -38,6 +38,11 @@ h1, h2, h3, h4, h5, h6
 	width: 2.6em;
 }
 
+.contact-links.narrow a
+{
+	border-bottom: none !important;
+}
+
 .large
 {
 	display: none;

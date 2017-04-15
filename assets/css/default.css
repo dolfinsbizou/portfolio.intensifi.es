@@ -1,0 +1,161 @@
+/* General section */
+
+/* Color palette: #A0A0A1 #707071 #57575A #222228 #18163D #080635 */
+
+html, body
+{
+	height: 100%;
+	font-family: 'Montserrat', serif;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+.small-caps
+{
+	font-variant: small-caps;
+}
+
+/* Header */
+
+header
+{
+	height: 100%;
+	text-align: center;
+	background: #222228;
+	color: #A0A0A1;
+}
+
+header #profile-picture
+{
+	margin-top: 10em;
+	width: 8em;
+	background: #707071;
+	border-radius: 100%;
+}
+
+header h1
+{
+	font-size: 2em;
+	margin-top: 1em;
+}
+
+header h2
+{
+	font-size: 1.1em;
+	margin-top: 0.4em;
+	margin-bottom: 1em;
+}
+
+header blockquote
+{
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
+header blockquote:before
+{
+	content: "\e977";
+	font-family: 'IcoMoon' !important;
+}
+
+header nav li
+{
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	font-size: 1.3em;
+	font-variant: small-caps;
+	width: 100%;
+}
+
+header nav li:hover
+{
+	background: #151521;
+}
+
+header nav a:before
+{
+	font-family: 'IcoMoon' !important;
+	margin-right: 0.2em;
+}
+
+header nav .about-link:before { content: "\e923"; }
+header .portfolio-link:before { content: "\e915"; }
+header .cv-link:before { content: "\e907"; }
+header .contact-link:before { content: "\e945"; }
+
+header nav a
+{
+	color: #A0A0A1;
+	text-decoration: none;
+}
+
+header nav a:hover
+{
+	color: #909091;
+}
+
+/* Cardo */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cardo'), local('Cardo-Regular'), url('../fonts/cardo/Cardo-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cardo';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cardo'), local('Cardo-Italic'), url('../fonts/cardo/Cardo-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cardo'), local('Cardo-Bold'), url('../fonts/cardo/Cardo-Bold.ttf') format('truetype');
+}
+
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Montserrat Thin'), local('Montserrat-Thin'), url('../fonts/montserrat/Montserrat-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url('../fonts/montserrat/Montserrat-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Montserrat Black'), local('Montserrat-Black'), url('../fonts/montserrat/Montserrat-Black.ttf') format('truetype');
+}
+
+/* IcoMoon */
+@font-face
+{
+	font-family: 'IcoMoon';
+	src: url('../fonts/icomoon/IcoMoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+} /* https://icomoon.io/#preview-free */

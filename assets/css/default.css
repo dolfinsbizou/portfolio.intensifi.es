@@ -322,6 +322,8 @@ header nav a:hover
 
 #content-wrapper .projects-list .preview-image
 {
+	max-width: 100%;
+	height: auto;
 	max-height: 8em;
 }
 

@@ -20,6 +20,28 @@ h1, h2, h3, h4, h5, h6
 	font-variant: small-caps;
 }
 
+.contact-links li
+{
+	display: inline;
+	margin-left: 0.1em;
+	margin-right: 0.1em;
+}
+
+.contact-links img
+{
+	width: 2.6em;
+}
+
+.large
+{
+	display: none;
+}
+
+.narrow
+{
+	display: initial;
+}
+
 /* Header */
 
 header
@@ -27,7 +49,7 @@ header
 	height: 100%;
 	width: 100%;
 	text-align: center;
-	background: #222228;
+	background: #222228 url('../img/background-noise.png');
 	color: #A0A0A1;
 }
 
@@ -50,18 +72,7 @@ header h2
 	font-size: 1.1em;
 	margin-top: 0.4em;
 	margin-bottom: 1em;
-}
-
-header blockquote
-{
-	font-style: italic;
-	margin-bottom: 1em;
-}
-
-header blockquote:before
-{
-	content: "\e977";
-	font-family: 'IcoMoon' !important;
+	font-weight: 300;
 }
 
 header nav li
@@ -81,7 +92,7 @@ header nav li:hover
 header nav a:before
 {
 	font-family: 'IcoMoon' !important;
-	margin-right: 0.2em;
+	margin-right: 0.4em;
 }
 
 header nav .about-link:before { content: "\e923"; }
@@ -97,23 +108,135 @@ header nav a
 
 header nav a:hover
 {
-	color: #909091;
+	color: #808081;
+}
+
+/* Content */
+
+#content-wrapper section, #content-wrapper aside, #content-wrapper footer
+{
+	padding: 1.5em;
+	box-shadow: 0px 2px 1px #909091 inset;
+	text-align: center;
+	color: #080635;
+}
+
+#content-wrapper footer
+{
+	background: #222228 url('../img/background-noise.png');
+	color: #A0A0A1;
+}
+
+.section-odd
+{
+	background: #F0F0F1 url('../img/background-noise.png');
+}
+
+.section-even
+{
+	background: #EAEAEB url('../img/background-noise.png');
+}
+
+#content-wrapper h3
+{
+	margin-bottom: 0.5em;
+	font-size: 3.2em;
+}
+
+#content-wrapper h4
+{
+	margin-bottom: 0.2em;
+	margin-top: 0.3em;
+	font-size: 1.6em;
+}
+
+#content-wrapper p
+{
+	font-size: 1.2em;
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+	line-height: 1.8em;
+}
+
+#content-wrapper blockquote
+{
+	font-style: italic;
+	margin-bottom: 1em;
+	font-size: 2em;
+	color: #626268;
+}
+
+#content-wrapper blockquote:before
+{
+	content: "\201C";
+	font-size: 3em;
+}
+
+#content-wrapper blockquote:after
+{
+	content: "\201D";
+	font-size: 3em;
+}
+
+#content-wrapper footer p
+{
+	font-size: 1em;
+	margin: 0;
+	line-height: 1.5em;
+	font-weight: 300;
 }
 
 /* Responsive */
 
 @media all and (min-width: 1024px)
 {
+	.contact-links.large
+	{
+		width: 100%;
+		display: block;
+		margin-top: 4em;
+		text-align: center;
+		margin-bottom: 2em;
+	}
+
+	.contact-links a
+	{
+		color: #A0A0A1;
+		text-decoration: none;
+	}
+
+	.contact-links a:hover
+	{
+		color: #909091;
+	}
+
+	.large
+	{
+		display: initial;
+	}
+
+	.narrow
+	{
+		display: none;
+	}
+
 	header
 	{
 		position: fixed;
-		width: 24%;
+		width: 30%;
 		text-align: left;
+		overflow-x: hidden;
+		overflow-y: auto;
 	}
 
-	header h1, header h2, header #profile-picture, header a, header blockquote
+	header h1, header h2, header #profile-picture, header nav a, header blockquote
 	{
 		margin-left: 5%;
+	}
+
+	header nav li
+	{
+		font-size: 1.5em;
 	}
 
 	header #profile-picture
@@ -123,7 +246,40 @@ header nav a:hover
 
 	#content-wrapper
 	{
-		margin-left: 24%;
+		margin-left: 30%;
+	}
+	
+	#content-wrapper section, #content-wrapper aside, #content-wrapper footer
+	{
+		padding: 3.5em;
+		text-align: left;
+	}
+
+	#content-wrapper footer
+	{
+		text-align: center;
+	}
+	
+	#content-wrapper h3
+	{
+		margin-bottom: 0.75em;
+		font-size: 4em;
+	}
+
+	#content-wrapper h4
+	{
+		margin-bottom: 0.3em;
+		margin-top: 0.4em;
+		font-size: 2em;
+	}
+
+	#content-wrapper p
+	{
+		font-weight: 100;
+		font-size: 1.6em;
+		margin-top: 0.8em;
+		margin-bottom: 0.8em;
+		line-height: 2.2em;
 	}
 }
 
@@ -131,33 +287,13 @@ header nav a:hover
 {
 	header
 	{
-		width: 325px;
+		width: 390px;
 	}
 
 	#content-wrapper
 	{
-		margin-left: 325px;
+		margin-left: 390px;
 	}
-}
-
-/* Cardo */
-@font-face {
-  font-family: 'Cardo';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Cardo'), local('Cardo-Regular'), url('../fonts/cardo/Cardo-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Cardo';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Cardo'), local('Cardo-Italic'), url('../fonts/cardo/Cardo-Italic.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Cardo';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Cardo'), local('Cardo-Bold'), url('../fonts/cardo/Cardo-Bold.ttf') format('truetype');
 }
 
 /* Montserrat */

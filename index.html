@@ -11,29 +11,37 @@
 	<header>
 		<img id="profile-picture" src="assets/img/profile.png" alt="Photo de profil" />
 		<h1>Guillaume <span class="small-caps">Jorandon</span></h1>
-		<h2>Étudiant Ingénieur en sciences informatiques</h2>
-		<blockquote>
-			Les couilles me grattent.
-		</blockquote>
+		<h2>Étudiant Ingénieur en science informatique</h2>
 		<nav>
 			<ul>
 				<li><a class="about-link" href="#about">À propos</a></li>
-				<li><a class="portfolio-link" href="#portfolio">Travaux</a></li>
+				<li><a class="portfolio-link" href="#portfolio">Réalisations</a></li>
 				<li><a class="cv-link" href="#cv">Curriculum Vitae</a></li>
 				<li><a class="contact-link" href="#contact">Contact</a></li>
 			</ul>
 		</nav>
+		</ul>
+		<ul class="contact-links large">
+			<li><a href="https://twitter.com/dolfsquare"><img src="assets/img/twitter-icon.png" alt="Twitter" /></a></li>
+			<li><a href="https://tooting.intensifi.es/@dolfsquare"><img src="assets/img/mastodon-icon.png" alt="Mastodon" /></a></li>
+			<li><a href="https://www.linkedin.com/in/guillaume-jorandon-b088a5116/"><img src="assets/img/linkedin-icon.png" alt="LinkedIn" /></a></li>
+			<li><a href="https://github.com/dolfinsbizou"><img src="assets/img/github-icon.png" alt="GitHub" /></a></li>
+		</ul>
 	</header>
 	<div id="content-wrapper">
-	<section id="about">
-		<h3>Qui suis-je ?</h3>
+	<section id="about" class="section-odd">
+		<h3>À propos</h3>
+		<blockquote>
+			Les couilles me grattent.
+		</blockquote>
 		<h4>Du blabla</h4>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus fermentum odio, et placerat est fringilla sit amet. Vestibulum viverra consectetur faucibus. Donec feugiat orci ante, vitae venenatis justo suscipit a. Fusce porta magna eu purus ullamcorper, vitae gravida massa convallis. Cras in vestibulum augue. Duis cursus, massa eget blandit aliquam, nunc mi volutpat elit, sed aliquet nibh ex a nunc. Praesent aliquet, quam tristique placerat condimentum, felis ipsum tristique enim, in molestie sem sem nec sapien. Pellentesque tincidunt nisi non elit porta, in euismod dolor pellentesque.</p>
+		<p>Un autre paragraphe.</p>
 		<h4>Encore du blabla</h4>
 		<p>Pellentesque volutpat ex ut nibh dapibus suscipit. Praesent egestas sapien lacinia neque tristique volutpat. In non enim elementum, eleifend nisl at, ultricies erat. Duis convallis vehicula turpis, et volutpat ligula aliquam in. Aliquam sed pulvinar erat. Suspendisse finibus dolor sed libero sodales, at hendrerit dolor interdum. Duis tortor nibh, ullamcorper sit amet varius in, tempus ut justo. Sed lacus nisl, maximus laoreet mattis nec, luctus id nisl. Vestibulum efficitur sapien vehicula tempor hendrerit. Maecenas nisl velit, vehicula ut ligula sed, placerat vehicula leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id maximus massa. Sed sagittis lacinia laoreet. In vel sapien bibendum, euismod eros quis, volutpat tellus.</p>
 	</section>
-	<section id="portfolio">
-		<h3>Que fais-je ?</h3>
+	<section id="portfolio" class="section-even">
+		<h3>Réalisations</h3>
 		<ul>
 			<li><a href="https://intensifi.es">
 				<img src="assets/img/profile.png" alt="Projet 1" />
@@ -57,12 +65,12 @@
 			</a></li>
 		</ul>
 	</section>
-	<section id="cv">
-		<h3>CV</h3>
+	<section id="cv" class="section-odd">
+		<h3>Curriculum Vitae</h3>
 		<a href="https://intensifi.es/files/cv.pdf">Curriculum Vitae en français</a>
 	</section>
-	<aside id="contact">
-		<h3>Contactez-moi</h3>
+	<aside id="contact" class="section-even">
+		<h3>Contact</h3>
 		<form method="post" action="post.php">
 			<label for="email">Adresse e-mail</label>
 			<input type="email" name="email" id="email" required /><br />
@@ -72,6 +80,12 @@
 			<textarea name="content" id="content" required></textarea><br />
 			<input type="submit" value="Envoyer" />
 		</form>
+		<ul class="contact-links narrow">
+			<li><a href="https://twitter.com/dolfsquare"><img src="assets/img/twitter-icon.png" alt="Twitter" /></a></li>
+			<li><a href="https://tooting.intensifi.es/@dolfsquare"><img src="assets/img/mastodon-icon.png" alt="Mastodon" /></a></li>
+			<li><a href="https://www.linkedin.com/in/guillaume-jorandon-b088a5116/"><img src="assets/img/linkedin-icon.png" alt="LinkedIn" /></a></li>
+			<li><a href="https://github.com/dolfinsbizou"><img src="assets/img/github-icon.png" alt="GitHub" /></a></li>
+		</ul>
 	</aside>
 	<footer>
 		<p>Copyright de mes fesses</p>

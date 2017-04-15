@@ -163,6 +163,13 @@ header nav a:hover
 	font-size: 1.6em;
 }
 
+#content-wrapper h5
+{
+	margin-bottom: 0.2em;
+	margin-top: 0.1em;
+	font-size: 1.4em;
+}
+
 #content-wrapper p
 {
 	font-size: 1.2em;
@@ -232,6 +239,31 @@ header nav a:hover
 	background: #B0B0B1;
 }
 
+#content-wrapper .projects-list
+{
+	text-align: center;
+}
+
+#content-wrapper .projects-list .preview-image
+{
+	max-height: 8em;
+}
+
+#content-wrapper .projects-list p
+{
+	font-weight: 300;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+#content-wrapper .projects-list a
+{
+	font-size: 1em;
+	width: 50%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 #content-wrapper .field, #content-wrapper .field-half
 {
 	display: block;
@@ -280,6 +312,25 @@ header nav a:hover
 }
 
 /* Responsive */
+
+@media all and (min-width: 850px)
+{
+	#content-wrapper .projects-list a
+	{
+		width: 40%;
+		height: 18em;
+		overflow: auto;
+		min-width: 18em;
+		max-width: 25em;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	#content-wrapper .projects-list li
+	{
+		display: inline;
+	}
+}
 
 @media all and (min-width: 1024px)
 {

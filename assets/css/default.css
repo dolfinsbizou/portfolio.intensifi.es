@@ -20,6 +20,12 @@ h1, h2, h3, h4, h5, h6
 	font-variant: small-caps;
 }
 
+.contact-links.narrow
+{
+	display: block;
+	margin-top: 1em;
+}
+
 .contact-links li
 {
 	display: inline;
@@ -188,6 +194,53 @@ header nav a:hover
 	font-weight: 300;
 }
 
+#content-wrapper .field, #content-wrapper .field-half
+{
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+#content-wrapper label, #content-wrapper input, #content-wrapper textarea
+{
+	display: inline-block;
+}
+
+#content-wrapper label
+{
+	width: 100%;
+	margin-bottom: 0.2em;
+	margin-top: 0.5em;
+}
+
+#content-wrapper input, #content-wrapper textarea
+{
+	width: 95%;
+	border: 1px solid #8C8C8D;
+	border-radius: 0.2em;
+	padding: 0.5em;
+	font-weight: 300;
+	font-family: "Montserrat", sans-serif;
+}
+
+#content-wrapper textarea
+{
+	resize: none;
+	height: 4em;
+}
+
+#content-wrapper input[type="submit"]
+{
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	width: auto;
+}
+
+#content-wrapper input[type="submit"]:hover
+{
+	background: #B0B0B1;
+}
+
 /* Responsive */
 
 @media all and (min-width: 1024px)
@@ -201,13 +254,18 @@ header nav a:hover
 		margin-bottom: 2em;
 	}
 
-	.contact-links a
+	.contact-links.narrow
+	{
+		display: none;
+	}
+
+	.contact-links.large a
 	{
 		color: #A0A0A1;
 		text-decoration: none;
 	}
 
-	.contact-links a:hover
+	.contact-links.large a:hover
 	{
 		color: #909091;
 	}
@@ -294,12 +352,19 @@ header nav a:hover
 	{
 		font-size: 3em;
 	}
+
 	#content-wrapper blockquote .quote-author
 	{
 		font-size: 0.8em;
 		display: inline-block;
 		width: 100%;
 		text-align: right;
+	}
+
+	#content-wrapper form
+	{
+		width: 60%;
+		margin: auto;
 	}
 }
 

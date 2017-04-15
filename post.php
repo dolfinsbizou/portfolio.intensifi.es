@@ -13,6 +13,14 @@ if(!isset($_POST))
 	exit(0);
 }
 
+// Anti bot hidden field
+if(!empty($_POST['comment']))
+{
+	error_log('Captcha! ' . json_encode($_POST));
+	header('Location: ./?error=6#contact');
+	exit(1);
+}
+
 if(!isset($_POST['email']) || !isset($_POST['subject']) || !isset($_POST['content']))
 {
 	header('Location: ./');

@@ -20,6 +20,9 @@ if(isset($_GET['error']))
 		case 5:
 			$errorInfo = "L'envoi a échoué pour une raison inconnue. Réessayez plus tard ou contactez moi sur les réseaux sociaux.";
 			break;
+		case 6:
+			$errorInfo = "Le champ anti-robot a été rempli.";
+			break;
 		default:
 			$errorInfo = null;
 	}

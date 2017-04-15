@@ -96,6 +96,8 @@
 			<label for="content">Message</label>
 			<textarea name="content" id="content" required></textarea>
 			</span>
+			<label for="comment" class="hp">Si vous êtes fait de chair et de sang, laissez ce champ vide.</label>
+			<input type="text" name="comment" id="comment" class="hp" />
 			<input type="submit" value="Envoyer" />
 		</form>
 		<ul class="contact-links narrow">

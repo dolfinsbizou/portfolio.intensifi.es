@@ -48,6 +48,13 @@ h1, h2, h3, h4, h5, h6
 	display: initial;
 }
 
+.download:before
+{
+	font-family: 'IcoMoon' !important;
+	content: "\e933";
+	margin-right: 0.2em;
+}
+
 /* Header */
 
 header
@@ -164,6 +171,11 @@ header nav a:hover
 	line-height: 1.8em;
 }
 
+#content-wrapper a
+{
+	color: #18163D;
+}
+
 #content-wrapper blockquote
 {
 	font-style: italic;
@@ -192,6 +204,32 @@ header nav a:hover
 	margin: 0;
 	line-height: 1.5em;
 	font-weight: 300;
+}
+
+#content-wrapper .button-list
+{
+	list-style-type: none;
+}
+
+#content-wrapper .button-list a
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#content-wrapper .button-list a
+{
+	font-size: 2em;
+	display: inline-block;
+	border: 1px solid #8C8C8D;
+	padding: 0.5em;
+	border-radius: 0.2em;
+	text-decoration: none;
+}
+
+#content-wrapper .button-list a:hover
+{
+	background: #B0B0B1;
 }
 
 #content-wrapper .field, #content-wrapper .field-half

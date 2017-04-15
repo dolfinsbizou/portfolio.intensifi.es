@@ -243,6 +243,20 @@ header nav a:hover
 #content-wrapper a
 {
 	color: #18163D;
+	text-decoration: none;
+	border-bottom: 1px dotted #18163D; /* Prettier than the ugly text-decoration-style: dotted */
+}
+
+#content-wrapper footer a
+{
+	color: #808081;
+	text-decoration: none;
+	border-bottom: 1px dotted #808081;
+}
+
+#content-wrapper strong
+{
+	font-weight: 400;
 }
 
 #content-wrapper blockquote
@@ -464,6 +478,11 @@ header nav a:hover
 	{
 		padding: 3.5em;
 		text-align: left;
+	}
+	
+	#content-wrapper strong
+	{
+		font-weight: 300;
 	}
 
 	#content-wrapper footer

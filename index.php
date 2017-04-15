@@ -31,4 +31,21 @@ if(isset($_GET['error']))
 else
 	$errorInfo = null;
 
-require_once('view/index.php');
+if(isset($_GET['lang']))
+{
+	$document_lang=$_GET['lang'];
+	switch($_GET['lang'])
+	{
+		case 'en':
+			require_once('view/index_en.php');
+			break;
+		default:
+			$document_lang="fr";
+			require_once('view/index_fr.php');
+	}
+}
+else
+{
+	$document_lang="fr";
+	require_once('view/index_fr.php');
+}

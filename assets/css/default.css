@@ -403,6 +403,34 @@ header nav a:hover
 
 /* Responsive */
 
+@media all and (orientation: landscape) and (max-width: 1024px)
+{
+	header #profile-picture
+	{
+		margin-top: 5em;
+	}
+
+	header nav li
+	{
+		display: inline;
+		padding-left: 0.4em;
+		padding-right: 0.4em;
+		margin: 0;
+	}
+
+	header nav a:before
+	{
+		display: none;
+	}
+
+	header nav
+	{
+		position: absolute;
+		bottom: 1em;
+		width: 100%;
+	}
+}
+
 @media all and (min-width: 850px)
 {
 	#content-wrapper .projects-list a

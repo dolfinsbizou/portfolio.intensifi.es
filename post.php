@@ -1,15 +1,17 @@
 <?php
 require_once('model/api_keys.php');
 
+$document_lang=(isset($_GET['lang'])?$_GET['lang']:"en");
+
 if(!$sendmail_enabled)
 {
-	header('Location: ./?error=4#contact');
+	header('Location: ./?lang=' . $document_lang . '&error=4#contact');
 	exit(0);
 }
 
 if(!isset($_POST))
 {
-	header('Location: ./');
+	header('Location: ./?lang=' . $document_lang);
 	exit(0);
 }
 
@@ -17,29 +19,29 @@ if(!isset($_POST))
 if(!empty($_POST['comment']))
 {
 	error_log('Captcha! ' . json_encode($_POST));
-	header('Location: ./?error=6#contact');
+	header('Location: ./?lang=' . $document_lang . '&error=6#contact');
 	exit(1);
 }
 
 if(!isset($_POST['email']) || !isset($_POST['subject']) || !isset($_POST['content']))
 {
-	header('Location: ./');
+	header('Location: ./?lang=' . $document_lang);
 	exit(0);
 }
 
 if($_POST['subject'] === "")
 {
-	header('Location: ./?error=1#contact');
+	header('Location: ./?lang=' . $document_lang . '&error=1#contact');
 	exit(0);
 }
 if($_POST['content'] === "")
 {
-	header('Location: ./?error=2#contact');
+	header('Location: ./?lang=' . $document_lang . '&error=2#contact');
 	exit(0);
 }
 if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 {
-	header('Location: ./?error=3#contact');
+	header('Location: ./?lang=' . $document_lang . '&error=3#contact');
 }
 
 $ch = curl_init();
@@ -62,7 +64,7 @@ $response = curl_exec($ch);
 
 if($response === FALSE)
 {
-	header('Location: ./?error=5#contact');
+	header('Location: ./?lang=' . $document_lang . '&error=5#contact');
 	exit(0);
 }
 
@@ -89,4 +91,4 @@ $response = curl_exec($ch);
 
 curl_close($ch);
 
-header('Location: ./?success#contact');
+header('Location: ./?lang=' . $document_lang . '&success#contact');

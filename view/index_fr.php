@@ -22,6 +22,10 @@
 		</nav>
 		</ul>
 		<?php contact_links("large"); ?>
+		<ul class="lang-selector">
+			<li><a href="./?lang=fr">[FR]</a></li>
+			<li><a href="./?lang=en">[EN]</a></li>
+		<ul>
 	</header>
 	<div id="content-wrapper">
 	<section id="about" class="section-odd">

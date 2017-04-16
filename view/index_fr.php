@@ -27,7 +27,7 @@
 	<section id="about" class="section-odd">
 		<h3>À propos</h3>
 		<blockquote>
-			Nous ne savons pas où nous allons, mais du moins il nous reste bien des choses à faire.<br /><span class="quote-author">Alan <span class="small-caps">Turing</span></span>
+			<span class="quote-content">Nous ne savons pas où nous allons, mais du moins il nous reste bien des choses à faire.</span><br /><span class="quote-author">Alan <span class="small-caps">Turing</span></span>
 		</blockquote>
 		<h4>En quelques mots</h4>
 		<p>Je suis étudiant ingénieur en <strong>Génie Informatique</strong> à l'<a href="https://www.utc.fr/" title="UTC">Université de Technologie de Compiègne</a>, en France. J'y étudie les <strong>mathématiques</strong> et la <strong>fouille de données</strong>. Dans le cadre du <a href="https://sites.google.com/site/mineurphiteco/" title="PHITECO">mineur PHITECO</a>, j'étudie aussi les <strong>sciences cognitives</strong> et l'influence des techniques sur les modes de pensée.</p>

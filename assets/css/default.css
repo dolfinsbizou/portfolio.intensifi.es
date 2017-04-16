@@ -273,10 +273,17 @@ header nav a:hover
 	quotes: "\201C""\201D""\2018""\2019";
 }
 
-#content-wrapper blockquote:before
+#content-wrapper blockquote .quote-content:before
 {
 	content: open-quote;
 	font-size: 2.25em;
+}
+
+#content-wrapper blockquote .quote-content:after
+{
+	content: close-quote;
+	font-size: 2.25em;
+	float: right;
 }
 
 #content-wrapper blockquote .quote-author

@@ -37,7 +37,7 @@
 	</section>
 	<section id="portfolio" class="section-even">
 		<h3>Réalisations</h3>
-		<ul class="button-list projects-list"><!-- 2500*800 is the optimal size for each picture -->
+		<ul class="button-list projects-list"><!-- 720*230 is the optimal size for each picture -->
 			<li><a href="https://intensifi.es">
 				<img class="preview-image" src="assets/img/aperture.png" alt="Aperture Sciences" />
 				<h5>Portal2.js</h5>

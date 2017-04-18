@@ -1,8 +1,0 @@
-<?php
-
-$mailgun_domain = "";
-$mailgun_sender = "";
-$mailgun_common_name = "";
-$mailgun_recipient = "";
-$mailgun_key="";
-$sendmail_enabled = true;

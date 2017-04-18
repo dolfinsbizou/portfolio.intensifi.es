@@ -116,6 +116,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+gettext = lambda x: x
+
+LANGUAGES = (
+	('fr', gettext('Français')),
+	('en', gettext('Anglais')),
+)
+
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
 )

@@ -3,6 +3,7 @@ bak/
 *.pot
 *.py[co]
 .tox/
+*.mo
 __pycache__
 MANIFEST
 dist/

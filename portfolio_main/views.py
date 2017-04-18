@@ -1,28 +1,34 @@
 from django.shortcuts import render
+from django.utils.translation import ugettext as _
+from django.utils import translation
 from datetime import datetime
 import requests
 from .forms import ContactForm
 from .app_settings import *
 
-def home(request):
+def home(request, lang):
     sendmail_enabled = SENDMAIL
     guitar_years = datetime.now().year - 2003
     form = ContactForm(request.POST or None)
     send_message = True
     error_info = ""
 
+    if lang != "":
+        translation.activate(lang)
+    active_lang = lang
+
     if request.method == 'POST':
         honeypot_extra_field = request.POST['comment'] or ""
         if not form.is_valid():
             send_message = False
-            error_info = "Formulaire invalide. Vérifiez la saisie et réessayez. "
+            error_info = _("Formulaire invalide. Vérifiez la saisie et réessayez. ")
         if honeypot_extra_field != "":
             send_message = False
-            error_info+= "Le champ anti-robot a été rempli. "
+            error_info+= _("Le champ anti-robot a été rempli. ")
         
         if not sendmail_enabled:
             send_message = False
-            error_info = "Toutes mes excuses. L'envoi de mail est actuellement désactivé. N'hésitez pas à me contacter sur les réseaux sociaux ! "
+            error_info = _("Toutes mes excuses. L'envoi de mail est actuellement désactivé. N'hésitez pas à me contacter sur les réseaux sociaux ! ")
         
         if send_message:
             request_url = 'https://api.mailgun.net/v3/{0}/messages'.format(MAILGUN_DOMAIN)
@@ -30,11 +36,11 @@ def home(request):
                     'from': '{0} <{1}@{2}>'.format(MAILGUN_COMMON_NAME, MAILGUN_SENDER, MAILGUN_DOMAIN),
                     'to': MAILGUN_RECIPIENT,
 	            'subject': form.cleaned_data['subject'],
-	            'text': 'Reçu de {0}\n{1}'.format(form.cleaned_data['email'], form.cleaned_data['content'])
+	            'text': _('Reçu de {sender}\n{message}').format(sender=form.cleaned_data['email'], message=form.cleaned_data['content'])
             })
 
             if http_request.status_code != requests.codes.ok:
-                error_info = "L'envoi a échoué pour une raison inconnue. Réessayez plus tard ou contactez moi sur les réseaux sociaux."
+                error_info = _("L'envoi a échoué pour une raison inconnue. Réessayez plus tard ou contactez moi sur les réseaux sociaux.")
                 success_info = False
             else:
                 success_info = True
@@ -42,8 +48,8 @@ def home(request):
             http_request = requests.post(request_url, auth=('api', MAILGUN_KEY), data={
                     'from': '{0} <{1}@{2}>'.format(MAILGUN_COMMON_NAME, MAILGUN_SENDER, MAILGUN_DOMAIN),
                     'to': form.cleaned_data['email'],
-	            'subject': 'Confirmation d\'envoi - portfolio.intensifi.es',
-	            'text': "Vous m'avez envoyé un email via portfolio.intensifi.es. Je vais l'examiner et y répondre dans les plus brefs délais.\nSujet : {0}\nMessage :\n{1}\n\nSi vous n'êtes pas à l'origine de ce message, merci d'ignorer le présent e-mail (et toutes mes excuses pour le dérangement, n'hésitez pas à me contacter si cela se reproduit).\nNe répondez pas directement à ce mail ! Je ne le recevrai pas. Contactez moi plutôt avec le formulaire sur portfolio.intensifi.es.".format(form.cleaned_data['subject'], form.cleaned_data['content'])
+	            'subject': _('Confirmation d\'envoi - portfolio.intensifi.es'),
+	            'text': _("Vous m'avez envoyé un email via portfolio.intensifi.es. Je vais l'examiner et y répondre dans les plus brefs délais.\nSujet : {subject}\nMessage :\n{message}\n\nSi vous n'êtes pas à l'origine de ce message, merci d'ignorer le présent e-mail (et toutes mes excuses pour le dérangement, n'hésitez pas à me contacter si cela se reproduit).\nNe répondez pas directement à ce mail ! Je ne le recevrai pas. Contactez moi plutôt avec le formulaire sur portfolio.intensifi.es.").format(subject=form.cleaned_data['subject'], message=form.cleaned_data['content'])
             })
 
             if success_info:

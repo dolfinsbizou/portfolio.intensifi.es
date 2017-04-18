@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-18 19:03+0000\n"
+"PO-Revision-Date: 2017-04-18 23:00 UTC+1 \n"
+"Last-Translator: Guillaume JORANDON <jorandon@gmail.com>\n"
+"Language-Team: NONE\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: portfolio_main/forms.py:5
+msgid "Adresse e-mail"
+msgstr "E-mail address"
+
+#: portfolio_main/forms.py:6
+msgid "Sujet"
+msgstr "Subject"
+
+#: portfolio_main/forms.py:7
+msgid "Message"
+msgstr "Body"
+
+#: portfolio_main/templates/portfolio_main/index.html:15
+msgid "Guillaume <span class=\"small-caps\">Jorandon</span>"
+msgstr "Guillaume Jorandon"
+
+#: portfolio_main/templates/portfolio_main/index.html:16
+msgid "Étudiant Ingénieur en science informatique"
+msgstr "Computer science engineering student"
+
+#: portfolio_main/templates/portfolio_main/index.html:19
+msgid "À propos"
+msgstr "About"
+
+#: portfolio_main/templates/portfolio_main/index.html:20
+msgid "Réalisations"
+msgstr "Creations"
+
+#: portfolio_main/templates/portfolio_main/index.html:21
+msgid "Curriculum Vitae"
+msgstr "Curriculum Vitae"
+
+#: portfolio_main/templates/portfolio_main/index.html:22
+msgid "Contact"
+msgstr "Contact"
+
+#: portfolio_main/templates/portfolio_main/index.html:41
+msgid ""
+"Nous ne savons pas où nous allons, mais du moins il nous reste bien des "
+"choses à faire."
+msgstr ""
+"We can only see a short distance ahead, but we can see plenty there that "
+"needs to be done."
+
+#: portfolio_main/templates/portfolio_main/index.html:41
+msgid "Alan <span class=\"small-caps\">Turing"
+msgstr "Alan Turing"
+
+#: portfolio_main/templates/portfolio_main/index.html:43
+msgid "En quelques mots"
+msgstr "In a nutshell"
+
+#: portfolio_main/templates/portfolio_main/index.html:45
+msgid ""
+"\n"
+"\t\tJe suis étudiant ingénieur en <strong>Génie Informatique</strong> à l'<a "
+"href=\"https://www.utc.fr/\" title=\"UTC\">Université de Technologie de "
+"Compiègne</a>, en France. J'y étudie les <strong>mathématiques</strong> et "
+"la <strong>fouille de données</strong>. Dans le cadre du <a href=\"https://"
+"sites.google.com/site/mineurphiteco/\" title=\"PHITECO\">mineur PHITECO</a>, "
+"j'étudie aussi les <strong>sciences cognitives</strong> et l'influence des "
+"techniques sur les modes de pensée.\n"
+"\t\t"
+msgstr ""
+"\n"
+"I'm a <strong>Computer Science and engineering</strong> student at the <a "
+"href=\"https://www.utc.fr/en.html\" title=\"UTC\">Université de Technologie "
+"de Compiègne</a>, France, where I study <strong>math</strong> and "
+"<strong>data mining</strong>. Furthermore, in the context of the <a href="
+"\"https://sites.google.com/site/mineurphiteco/\" title=\"PHITECO\">PHITECO "
+"minor</a>, I study <strong>cognitive science</strong> and philosophy of "
+"technology."
+
+#: portfolio_main/templates/portfolio_main/index.html:49
+msgid "Activités et passions"
+msgstr "Associations and hobbies"
+
+#: portfolio_main/templates/portfolio_main/index.html:51
+#, python-format
+msgid ""
+"\n"
+"\t\tPassionné de musique de touts styles (du jazz au rap, en passant par le "
+"trip hop), je fais de la guitare depuis %(guitar_years)s ans ; j'ai été "
+"membre d'un groupe par le biais de <a href=\"http://assos.utc.fr/larsen/\" "
+"title=\"Larsen\">Larsen</a>, une association qui fédère les activités "
+"musicales à l'UTC. Plus récemment je me suis mis au piano. Je cuisine et "
+"j'aime beaucoup lire.\n"
+"\t\t"
+msgstr ""
+"\n"
+"Passionate about music (from jazz to rap to trip hop), I've been playing "
+"guitar for %(guitar_years)s years; I've been part of a band thanks to <a "
+"href=\"http://assos.utc.fr/larsen/\" title=\"Larsen\">Larsen</a>, a student "
+"association federating musical activities at the UTC. I started playing "
+"piano lately. I cook and also love to read."
+
+#: portfolio_main/templates/portfolio_main/index.html:56
+msgid ""
+"\n"
+"\t\tSensibilisé aux problématiques de droit en ligne et de libertés "
+"numériques, je participe en tant que Trésorier à <a href=\"https://picasoft."
+"net/\" title=\"Picasoft\">Picasoft</a>, association étudiante membre du "
+"collectif <a href=\"https://chatons.org/\" title=\"Collectif des Hébergeurs "
+"Alternatifs, Transparents, Ouverts, Neutres et Solidaires\">CHATONS</a>, qui "
+"vise à promouvoir et défendre une approche libriste respectueuse de la vie "
+"privée et de la liberté d'expression dans le domaine de l'informatique, à "
+"travers la formation et la sensibilisation du milieu ingénieur, mais aussi "
+"en proposant des alternatives libres aux services privatisants.\n"
+"\t\t"
+msgstr ""
+"\n"
+"Aware of the issues about online rights and digital freedoms, I'm a "
+"treasurer for  <a href=\"https://picasoft.net/\" title=\"Picasoft"
+"\">Picasoft</a>, student association member of <a href=\"https://framagit."
+"org/framasoft/CHATONS/blob/master/docs/Charter-en.md\" title=\"Keen Internet "
+"Talented Teams Engaged in Network Service\">KITTENS</a>, promoting net "
+"neutrality and the use of free software, by training and raising awareness "
+"of engineering students, but also by providing free sotftware alternatives "
+"to private services."
+
+#: portfolio_main/templates/portfolio_main/index.html:67
+msgid ""
+"Une reconstruction fidèle du générique de fin de Portal 2 en JavaScript."
+msgstr ""
+"A faithful Javascript reconstruction of the ending credits of Portal 2."
+
+#: portfolio_main/templates/portfolio_main/index.html:72
+msgid "Un générateur de fractales de Mandelbrot personnalisables, avec libpng."
+msgstr "A mandelbrot set computing utility using libpng."
+
+#: portfolio_main/templates/portfolio_main/index.html:77
+msgid "Un fork du mini-jeu Paper Plane, en C++ avec la SFML."
+msgstr "A C++/SFML fork of the mini-game Paper Plane."
+
+#: portfolio_main/templates/portfolio_main/index.html:82
+msgid ""
+"Un ensemble de réflexions sur la représentation médiatique de Christiane "
+"<span class=\"small-caps\">Taubira</span>, réalisé dans un cadre académique."
+msgstr ""
+"A bunch of thinkings made in an academic context about the media "
+"representation of Christiane Taubira, a french political woman."
+
+#: portfolio_main/templates/portfolio_main/index.html:88
+msgid "Plus à venir."
+msgstr "There's more to come!"
+
+#: portfolio_main/templates/portfolio_main/index.html:95
+msgid "Français"
+msgstr "French"
+
+#: portfolio_main/templates/portfolio_main/index.html:96
+msgid "Anglais"
+msgstr "English"
+
+#: portfolio_main/templates/portfolio_main/index.html:102
+msgid ""
+"\n"
+"\t\tSi vous avez une question, une offre particulière à me faire, contactez-"
+"moi avec ce formulaire.\n"
+"\t\t"
+msgstr ""
+"\n"
+"If you have a question, an offer to make, contact me with this form."
+
+#: portfolio_main/templates/portfolio_main/index.html:109
+msgid ""
+"Message envoyé. Je vais l'examiner et y répondre dans les plus brefs délais."
+msgstr "Message sent. I'll examine it and answer as soon as possible."
+
+#: portfolio_main/templates/portfolio_main/index.html:111
+msgid ""
+"L'envoi de messages est actuellement désactivé. Je vous invite à me "
+"contacter sur les réseaux sociaux."
+msgstr ""
+"This form is currently deactivated. Please contact me on social networks "
+"instead."
+
+#: portfolio_main/templates/portfolio_main/index.html:117
+msgid ""
+"Si vous êtes un être doué d'une conscience, et capable d'auto-détermination, "
+"laissez ce champ vide."
+msgstr ""
+"If you are a self-conscious being, capable of self-determination, please "
+"don't fill this field."
+
+#: portfolio_main/templates/portfolio_main/index.html:119
+msgid "Envoyer"
+msgstr "Send"
+
+#: portfolio_main/templates/portfolio_main/index.html:129
+msgid ""
+"Le thème de ce site est transféré dans le domaine public selon les termes de "
+"la <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.fr\" "
+"title=\"CC0\">licence CC0</a>"
+msgstr ""
+"This design is released in the public domain following the terms of the <a "
+"href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\" title="
+"\"CC0\">CC0 license</a>"
+
+#: portfolio_main/views.py:24
+msgid "Formulaire invalide. Vérifiez la saisie et réessayez. "
+msgstr "The form is invalid. Correct the errors and try again."
+
+#: portfolio_main/views.py:27
+msgid "Le champ anti-robot a été rempli. "
+msgstr "The anti-bot field has been filled."
+
+#: portfolio_main/views.py:31
+msgid ""
+"Toutes mes excuses. L'envoi de mail est actuellement désactivé. N'hésitez "
+"pas à me contacter sur les réseaux sociaux ! "
+msgstr ""
+"I'm sorry, but this form is currently deactivated. Don't hesitate to bother "
+"me on social networks!"
+
+#: portfolio_main/views.py:39
+#, python-brace-format
+msgid ""
+"Reçu de {sender}\n"
+"{message}"
+msgstr ""
+"Received from {sender}\n"
+"{message}"
+
+#: portfolio_main/views.py:43
+msgid ""
+"L'envoi a échoué pour une raison inconnue. Réessayez plus tard ou contactez "
+"moi sur les réseaux sociaux."
+msgstr ""
+"Sending failed for unknown reason. Try again later or contact me on social "
+"networks."
+
+#: portfolio_main/views.py:51
+msgid "Confirmation d'envoi - portfolio.intensifi.es"
+msgstr "Sending confirmation - portfolio.intensifi.es"
+
+#: portfolio_main/views.py:52
+#, python-brace-format
+msgid ""
+"Vous m'avez envoyé un email via portfolio.intensifi.es. Je vais l'examiner "
+"et y répondre dans les plus brefs délais.\n"
+"Sujet : {subject}\n"
+"Message :\n"
+"{message}\n"
+"\n"
+"Si vous n'êtes pas à l'origine de ce message, merci d'ignorer le présent e-"
+"mail (et toutes mes excuses pour le dérangement, n'hésitez pas à me "
+"contacter si cela se reproduit).\n"
+"Ne répondez pas directement à ce mail ! Je ne le recevrai pas. Contactez moi "
+"plutôt avec le formulaire sur portfolio.intensifi.es."
+msgstr ""
+"You sent me an email via portfolio.intensifi.es. I'll examine it and answer "
+"as soon as possible.\n"
+"Subject: {subject}\n"
+"Message:\n"
+"{message}\n"
+"\n"
+"If you didn't send this message, please ignore this email (and sorry for "
+"inconvenience, contact me if it happens again).\n"
+"Don't answer directly to that email! I won't receive it. Contact me instead "
+"using the form contact on portfolio.intensifi.es."

@@ -392,6 +392,12 @@ header nav a:hover
 	margin-top: 0.5em;
 }
 
+#content-wrapper form .errorlist
+{
+	color: #AA0000;
+	list-style-type: none;
+}
+
 #content-wrapper input, #content-wrapper textarea
 {
 	width: 95%;

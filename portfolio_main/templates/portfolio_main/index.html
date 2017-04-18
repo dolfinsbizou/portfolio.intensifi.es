@@ -93,21 +93,12 @@
 		{% elif not sendmail_enabled %}
 		<div class="warning-info">L'envoi de messages est actuellement désactivé. Je vous invite à me contacter sur les réseaux sociaux.</div>
 		{% endif %}
-		<form method="post" action="post.php">
-			<span class="field-half">
-			<label for="email">Adresse e-mail</label>
-			<input type="email" name="email" id="email" required />
-			</span>
-			<span class="field-half">
-			<label for="subject">Sujet</label>
-			<input type="text" name="subject" id="subject" required />
-			</span>
-			<span class="field">
-			<label for="content">Message</label>
-			<textarea name="content" id="content" required></textarea>
-			</span>
+
+		<form method="post" action="{% url "home" %}#contact">
+			{% csrf_token %}
+			{{ form }}
 			<label for="comment" class="hp">Si vous êtes un être doué d'une conscience, et capable d'auto-détermination, laissez ce champ vide.</label>
-			<input type="text" name="comment" id="comment" class="hp" />
+			<input type="text" name="comment" id="comment" class="hp" value="{{ honeypot_extra_field }}" />
 			<input type="submit" value="Envoyer" />
 		</form>
 		<ul class="contact-links narrow">

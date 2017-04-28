@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 19:03+0000\n"
+"POT-Creation-Date: 2017-04-28 20:33+0000\n"
 "PO-Revision-Date: 2017-04-18 23:00 UTC+1 \n"
 "Last-Translator: Guillaume JORANDON <jorandon@gmail.com>\n"
 "Language-Team: NONE\n"
@@ -131,10 +131,10 @@ msgstr ""
 "I'm a treasurer for  <a href=\"https://picasoft.net/\" title=\"Picasoft"
 "\">Picasoft</a>, student association member of <a href=\"https://framagit."
 "org/framasoft/CHATONS/blob/master/docs/Charter-en.md\" title=\"Keen Internet "
-"Talented Teams Engaged in Network Service\">KITTENS</a>, a collective promoting net "
-"neutrality and use of free software, by training and raising awareness "
-"among engineering students, but also by providing free software alternatives "
-"to private services."
+"Talented Teams Engaged in Network Service\">KITTENS</a>, a collective "
+"promoting net neutrality and use of free software, by training and raising "
+"awareness among engineering students, but also by providing free software "
+"alternatives to private services."
 
 #: portfolio_main/templates/portfolio_main/index.html:67
 msgid ""
@@ -147,10 +147,18 @@ msgid "Un générateur de fractales de Mandelbrot personnalisables, avec libpng.
 msgstr "A mandelbrot set computing utility using libpng."
 
 #: portfolio_main/templates/portfolio_main/index.html:77
+msgid ""
+"Un générateur de buddhabrots, une représentation alternative de l'ensemble "
+"de Mandelbrot, avec libpng (en chantier)."
+msgstr ""
+"A buddhabrot generator, an alternate representation of the mandelbrot set, "
+"using libpng (WIP)."
+
+#: portfolio_main/templates/portfolio_main/index.html:82
 msgid "Un fork du mini-jeu Paper Plane, en C++ avec la SFML."
 msgstr "A C++/SFML fork of the mini-game Paper Plane."
 
-#: portfolio_main/templates/portfolio_main/index.html:82
+#: portfolio_main/templates/portfolio_main/index.html:87
 msgid ""
 "Un ensemble de réflexions sur la représentation médiatique de Christiane "
 "<span class=\"small-caps\">Taubira</span>, réalisé dans un cadre académique."
@@ -158,19 +166,19 @@ msgstr ""
 "A bunch of thinkings made in an academic context about the media "
 "representation of Christiane Taubira, a french political woman."
 
-#: portfolio_main/templates/portfolio_main/index.html:88
+#: portfolio_main/templates/portfolio_main/index.html:93
 msgid "Plus à venir."
 msgstr "There's more to come!"
 
-#: portfolio_main/templates/portfolio_main/index.html:95
+#: portfolio_main/templates/portfolio_main/index.html:100
 msgid "Français"
 msgstr "French"
 
-#: portfolio_main/templates/portfolio_main/index.html:96
+#: portfolio_main/templates/portfolio_main/index.html:101
 msgid "Anglais"
 msgstr "English"
 
-#: portfolio_main/templates/portfolio_main/index.html:102
+#: portfolio_main/templates/portfolio_main/index.html:107
 msgid ""
 "\n"
 "\t\tSi vous avez une question, une offre particulière à me faire, contactez-"
@@ -180,12 +188,12 @@ msgstr ""
 "\n"
 "If you have a question, an offer to make, contact me with this form."
 
-#: portfolio_main/templates/portfolio_main/index.html:109
+#: portfolio_main/templates/portfolio_main/index.html:114
 msgid ""
 "Message envoyé. Je vais l'examiner et y répondre dans les plus brefs délais."
 msgstr "Message sent. I'll examine it and answer as soon as possible."
 
-#: portfolio_main/templates/portfolio_main/index.html:111
+#: portfolio_main/templates/portfolio_main/index.html:116
 msgid ""
 "L'envoi de messages est actuellement désactivé. Je vous invite à me "
 "contacter sur les réseaux sociaux."
@@ -193,7 +201,7 @@ msgstr ""
 "This form is currently deactivated. Please contact me on social networks "
 "instead."
 
-#: portfolio_main/templates/portfolio_main/index.html:117
+#: portfolio_main/templates/portfolio_main/index.html:122
 msgid ""
 "Si vous êtes un être doué d'une conscience, et capable d'auto-détermination, "
 "laissez ce champ vide."
@@ -201,11 +209,11 @@ msgstr ""
 "If you are a self-conscious being, capable of self-determination, please "
 "don't fill this field."
 
-#: portfolio_main/templates/portfolio_main/index.html:119
+#: portfolio_main/templates/portfolio_main/index.html:124
 msgid "Envoyer"
 msgstr "Send"
 
-#: portfolio_main/templates/portfolio_main/index.html:129
+#: portfolio_main/templates/portfolio_main/index.html:134
 msgid ""
 "Le thème de ce site est transféré dans le domaine public selon les termes de "
 "la <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.fr\" "

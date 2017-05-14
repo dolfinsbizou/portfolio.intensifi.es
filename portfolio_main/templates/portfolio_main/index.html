@@ -35,7 +35,7 @@
 		<ul>
 	</header>
 	<div id="content-wrapper">
-	<section id="about" class="section-odd">
+	<section id="about">
 		<h3>{{ about_section }}</h3>
 		<blockquote>
 			<span class="quote-content">{% trans "Nous ne savons pas où nous allons, mais du moins il nous reste bien des choses à faire." %}</span><br /><span class="quote-author">{% trans 'Alan <span class="small-caps">Turing' %}</span>
@@ -58,7 +58,7 @@
 		{% endblocktrans %}
 		</p>
 	</section>
-	<section id="portfolio" class="section-even">
+	<section id="portfolio">
 		<h3>{{ portfolio_section }}</h3>
 		<ul class="button-list projects-list"><!-- 720*230 is the optimal size for each picture -->
 			<li><a href="https://glados.intensifi.es">
@@ -94,14 +94,14 @@
 			</a></li>
 		</ul>
 	</section>
-	<section id="cv" class="section-odd">
+	<section id="cv">
 		<h3>{{ cv_section }}</h3>
 		<ul class="button-list">
 			<li><a class="download" href="https://intensifi.es/files/cv.pdf">{% trans "Français" %}</a></li>
 			<li><a class="download" href="https://intensifi.es/files/cv_en.pdf">{% trans "Anglais" %}</a></li>
 		</ul>
 	</section>
-	<aside id="contact" class="section-even">
+	<aside id="contact">
 		<h3>{{ contact_section }}</h3>
 		<p>
 		{% blocktrans %}

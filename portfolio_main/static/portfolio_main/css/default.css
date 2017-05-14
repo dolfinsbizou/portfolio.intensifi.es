@@ -226,12 +226,12 @@ header nav a:hover
 	color: #A0A0A1;
 }
 
-.section-odd
+#content-wrapper section:nth-child(odd), #content-wrapper aside:nth-child(odd)
 {
 	background: #F0F0F1 url('../img/background-noise.png');
 }
 
-.section-even
+#content-wrapper section:nth-child(even), #content-wrapper aside:nth-child(even)
 {
 	background: #EAEAEB url('../img/background-noise.png');
 }

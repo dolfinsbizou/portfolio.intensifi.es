@@ -45,14 +45,13 @@ def home(request, lang):
             else:
                 success_info = True
 
-            http_request = requests.post(request_url, auth=('api', MAILGUN_KEY), data={
+            if success_info:
+            	http_request = requests.post(request_url, auth=('api', MAILGUN_KEY), data={
                     'from': '{0} <{1}@{2}>'.format(MAILGUN_COMMON_NAME, MAILGUN_SENDER, MAILGUN_DOMAIN),
                     'to': form.cleaned_data['email'],
 	            'subject': _('Confirmation d\'envoi - portfolio.intensifi.es'),
 	            'text': _("Vous m'avez envoyé un email via portfolio.intensifi.es. Je vais l'examiner et y répondre dans les plus brefs délais.\nSujet : {subject}\nMessage :\n{message}\n\nSi vous n'êtes pas à l'origine de ce message, merci d'ignorer le présent e-mail (et toutes mes excuses pour le dérangement, n'hésitez pas à me contacter si cela se reproduit).\nNe répondez pas directement à ce mail ! Je ne le recevrai pas. Contactez moi plutôt avec le formulaire sur portfolio.intensifi.es.").format(subject=form.cleaned_data['subject'], message=form.cleaned_data['content'])
             })
-
-            if success_info:
                 form = ContactForm()
 
 

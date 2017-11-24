@@ -46,7 +46,7 @@ def home(request, lang):
                 success_info = True
 
             if success_info:
-            	http_request = requests.post(request_url, auth=('api', MAILGUN_KEY), data={
+                http_request = requests.post(request_url, auth=('api', MAILGUN_KEY), data={
                     'from': '{0} <{1}@{2}>'.format(MAILGUN_COMMON_NAME, MAILGUN_SENDER, MAILGUN_DOMAIN),
                     'to': form.cleaned_data['email'],
 	            'subject': _('Confirmation d\'envoi - portfolio.intensifi.es'),

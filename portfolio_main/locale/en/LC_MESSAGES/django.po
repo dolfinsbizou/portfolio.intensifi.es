@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-20 15:07+0000\n"
+"POT-Creation-Date: 2017-11-24 13:44+0000\n"
 "PO-Revision-Date: 2017-04-18 23:00 UTC+1 \n"
 "Last-Translator: Guillaume JORANDON <jorandon@gmail.com>\n"
 "Language-Team: NONE\n"
@@ -167,22 +167,28 @@ msgstr ""
 "representation of Christiane Taubira, a french political woman."
 
 #: portfolio_main/templates/portfolio_main/index.html:92
+msgid ""
+"Un mod du jeu Minecraft fait il y a 5 ans. Il avait réussi à devenir "
+"extrêmement populaire."
+msgstr "A Minecraft mode I made 5 years ago. It managed to become very popular."
+
+#: portfolio_main/templates/portfolio_main/index.html:97
 msgid "Le portfolio de Élisa Péron, artiste et étudiante en arts graphiques."
 msgstr "Élisa Péron's portfolio, a french artist and arts student."
 
-#: portfolio_main/templates/portfolio_main/index.html:98
+#: portfolio_main/templates/portfolio_main/index.html:103
 msgid "Plus à venir."
 msgstr "There's more to come!"
 
-#: portfolio_main/templates/portfolio_main/index.html:105
+#: portfolio_main/templates/portfolio_main/index.html:110
 msgid "Français"
 msgstr "French"
 
-#: portfolio_main/templates/portfolio_main/index.html:106
+#: portfolio_main/templates/portfolio_main/index.html:111
 msgid "Anglais"
 msgstr "English"
 
-#: portfolio_main/templates/portfolio_main/index.html:112
+#: portfolio_main/templates/portfolio_main/index.html:117
 msgid ""
 "\n"
 "\t\tSi vous avez une question, une offre particulière à me faire, contactez-"
@@ -192,12 +198,12 @@ msgstr ""
 "\n"
 "If you have a question, an offer to make, contact me with this form."
 
-#: portfolio_main/templates/portfolio_main/index.html:119
+#: portfolio_main/templates/portfolio_main/index.html:124
 msgid ""
 "Message envoyé. Je vais l'examiner et y répondre dans les plus brefs délais."
 msgstr "Message sent. I'll examine it and answer as soon as possible."
 
-#: portfolio_main/templates/portfolio_main/index.html:121
+#: portfolio_main/templates/portfolio_main/index.html:126
 msgid ""
 "L'envoi de messages est actuellement désactivé. Je vous invite à me "
 "contacter sur les réseaux sociaux."
@@ -205,7 +211,7 @@ msgstr ""
 "This form is currently deactivated. Please contact me on social networks "
 "instead."
 
-#: portfolio_main/templates/portfolio_main/index.html:127
+#: portfolio_main/templates/portfolio_main/index.html:132
 msgid ""
 "Si vous êtes un être doué d'une conscience, et capable d'auto-détermination, "
 "laissez ce champ vide."
@@ -213,11 +219,11 @@ msgstr ""
 "If you are a self-conscious being, capable of self-determination, please "
 "don't fill this field."
 
-#: portfolio_main/templates/portfolio_main/index.html:129
+#: portfolio_main/templates/portfolio_main/index.html:134
 msgid "Envoyer"
 msgstr "Send"
 
-#: portfolio_main/templates/portfolio_main/index.html:139
+#: portfolio_main/templates/portfolio_main/index.html:144
 msgid ""
 "Le thème de ce site est transféré dans le domaine public selon les termes de "
 "la <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.fr\" "
@@ -260,11 +266,11 @@ msgstr ""
 "Sending failed for unknown reason. Try again later or contact me on social "
 "networks."
 
-#: portfolio_main/views.py:51
+#: portfolio_main/views.py:52
 msgid "Confirmation d'envoi - portfolio.intensifi.es"
 msgstr "Sending confirmation - portfolio.intensifi.es"
 
-#: portfolio_main/views.py:52
+#: portfolio_main/views.py:53
 #, python-brace-format
 msgid ""
 "Vous m'avez envoyé un email via portfolio.intensifi.es. Je vais l'examiner "

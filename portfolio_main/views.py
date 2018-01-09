@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext as _, get_language
 from django.utils import translation
 from datetime import datetime
 import requests
@@ -15,7 +15,7 @@ def home(request, lang):
 
     if lang != "":
         translation.activate(lang)
-    active_lang = lang
+    active_lang = get_language
 
     if request.method == 'POST':
         honeypot_extra_field = request.POST['comment'] or ""

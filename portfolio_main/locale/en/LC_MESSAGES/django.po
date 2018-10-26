@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-24 13:44+0000\n"
+"POT-Creation-Date: 2018-10-26 13:22+0000\n"
 "PO-Revision-Date: 2017-04-18 23:00 UTC+1 \n"
 "Last-Translator: Guillaume JORANDON <jorandon@gmail.com>\n"
 "Language-Team: NONE\n"
@@ -53,7 +53,7 @@ msgstr "Curriculum Vitae"
 msgid "Contact"
 msgstr "Contact"
 
-#: portfolio_main/templates/portfolio_main/index.html:41
+#: portfolio_main/templates/portfolio_main/index.html:40
 msgid ""
 "Nous ne savons pas où nous allons, mais du moins il nous reste bien des "
 "choses à faire."
@@ -61,40 +61,52 @@ msgstr ""
 "We can only see a short distance ahead, but we can see plenty there that "
 "needs to be done."
 
-#: portfolio_main/templates/portfolio_main/index.html:41
+#: portfolio_main/templates/portfolio_main/index.html:40
 msgid "Alan <span class=\"small-caps\">Turing"
 msgstr "Alan Turing"
 
-#: portfolio_main/templates/portfolio_main/index.html:43
+#: portfolio_main/templates/portfolio_main/index.html:42
 msgid "En quelques mots"
 msgstr "In a nutshell"
 
-#: portfolio_main/templates/portfolio_main/index.html:45
+#: portfolio_main/templates/portfolio_main/index.html:44
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "\t\tJe suis étudiant ingénieur en <strong>Génie Informatique</strong> à "
+#| "l'<a href=\"https://www.utc.fr/\" title=\"UTC\">Université de Technologie "
+#| "de Compiègne</a>, en France. J'y étudie les <strong>mathématiques</"
+#| "strong> et la <strong>fouille de données</strong>. Dans le cadre du <a "
+#| "href=\"https://sites.google.com/site/mineurphiteco/\" title=\"PHITECO"
+#| "\">mineur PHITECO</a>, j'étudie aussi les <strong>sciences cognitives</"
+#| "strong> et l'influence des techniques sur les modes de pensée.\n"
+#| "\t\t"
 msgid ""
 "\n"
-"\t\tJe suis étudiant ingénieur en <strong>Génie Informatique</strong> à l'<a "
-"href=\"https://www.utc.fr/\" title=\"UTC\">Université de Technologie de "
-"Compiègne</a>, en France. J'y étudie les <strong>mathématiques</strong> et "
-"la <strong>fouille de données</strong>. Dans le cadre du <a href=\"https://"
-"sites.google.com/site/mineurphiteco/\" title=\"PHITECO\">mineur PHITECO</a>, "
-"j'étudie aussi les <strong>sciences cognitives</strong> et l'influence des "
-"techniques sur les modes de pensée.\n"
+"\t\tJe suis en double diplôme ingénieur/master de recherche en <strong>Génie "
+"Informatique</strong> à l'<a href=\"https://www.utc.fr/\" title=\"UTC"
+"\">Université de Technologie de Compiègne</a>, en France. J'y étudie les "
+"<strong>mathématiques</strong> et l' <strong>analyse de données</strong> "
+"avancée. Dans le cadre du <a href=\"https://sites.google.com/site/"
+"mineurphiteco/\" title=\"PHITECO\">mineur PHITECO</a>, j'étudie aussi les "
+"<strong>sciences cognitives</strong> et l'influence des techniques sur les "
+"modes de pensée.\n"
 "\t\t"
 msgstr ""
 "\n"
 "I'm a <strong>Computer Science and engineering</strong> student at the <a "
 "href=\"https://www.utc.fr/en.html\" title=\"UTC\">Université de Technologie "
-"de Compiègne</a>, France, where I study <strong>math</strong> and "
-"<strong>data mining</strong>. Furthermore, in the context of the <a href="
+"de Compiègne</a>, France, where I study <strong>math</strong> and advanced"
+"<strong>data analysis</strong> thanks to a research oriented dual degree. Furthermore, in the context of the <a href="
 "\"https://sites.google.com/site/mineurphiteco/\" title=\"PHITECO\">PHITECO "
 "minor</a>, I study <strong>cognitive science</strong> and philosophy of "
 "technology."
 
-#: portfolio_main/templates/portfolio_main/index.html:49
+#: portfolio_main/templates/portfolio_main/index.html:48
 msgid "Activités et passions"
 msgstr "Associations and hobbies"
 
-#: portfolio_main/templates/portfolio_main/index.html:51
+#: portfolio_main/templates/portfolio_main/index.html:50
 #, python-format
 msgid ""
 "\n"
@@ -113,22 +125,37 @@ msgstr ""
 "association federating musical activities at the UTC. I started playing "
 "piano lately. I cook and also love to read."
 
-#: portfolio_main/templates/portfolio_main/index.html:56
+#: portfolio_main/templates/portfolio_main/index.html:55
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "\t\tSensibilisé aux problématiques de droit en ligne et de libertés "
+#| "numériques, je participe en tant que Trésorier à <a href=\"https://"
+#| "picasoft.net/\" title=\"Picasoft\">Picasoft</a>, association étudiante "
+#| "membre du collectif <a href=\"https://chatons.org/\" title=\"Collectif "
+#| "des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et Solidaires"
+#| "\">CHATONS</a>, qui vise à promouvoir et défendre une approche libriste "
+#| "respectueuse de la vie privée et de la liberté d'expression dans le "
+#| "domaine de l'informatique, à travers la formation et la sensibilisation "
+#| "du milieu ingénieur, mais aussi en proposant des alternatives libres aux "
+#| "services privatisants.\n"
+#| "\t\t"
 msgid ""
 "\n"
 "\t\tSensibilisé aux problématiques de droit en ligne et de libertés "
-"numériques, je participe en tant que Trésorier à <a href=\"https://picasoft."
-"net/\" title=\"Picasoft\">Picasoft</a>, association étudiante membre du "
-"collectif <a href=\"https://chatons.org/\" title=\"Collectif des Hébergeurs "
-"Alternatifs, Transparents, Ouverts, Neutres et Solidaires\">CHATONS</a>, qui "
-"vise à promouvoir et défendre une approche libriste respectueuse de la vie "
-"privée et de la liberté d'expression dans le domaine de l'informatique, à "
-"travers la formation et la sensibilisation du milieu ingénieur, mais aussi "
-"en proposant des alternatives libres aux services privatisants.\n"
+"numériques, j'ai participe en tant que Trésorier, puis Président, à <a href="
+"\"https://picasoft.net/\" title=\"Picasoft\">Picasoft</a>, association "
+"étudiante membre du collectif <a href=\"https://chatons.org/\" title="
+"\"Collectif des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et "
+"Solidaires\">CHATONS</a>, qui vise à promouvoir et défendre une approche "
+"libriste respectueuse de la vie privée et de la liberté d'expression dans le "
+"domaine de l'informatique, à travers la formation et la sensibilisation du "
+"milieu ingénieur, mais aussi en proposant des alternatives libres aux "
+"services privatisants.\n"
 "\t\t"
 msgstr ""
 "\n"
-"I'm a treasurer for  <a href=\"https://picasoft.net/\" title=\"Picasoft"
+"I've been a treasurer and a president for  <a href=\"https://picasoft.net/\" title=\"Picasoft"
 "\">Picasoft</a>, student association member of <a href=\"https://framagit."
 "org/framasoft/CHATONS/blob/master/docs/Charter-en.md\" title=\"Keen Internet "
 "Talented Teams Engaged in Network Service\">KITTENS</a>, a collective "
@@ -136,17 +163,17 @@ msgstr ""
 "awareness among engineering students, but also by providing free software "
 "alternatives to private services."
 
-#: portfolio_main/templates/portfolio_main/index.html:67
+#: portfolio_main/templates/portfolio_main/index.html:66
 msgid ""
 "Une reconstruction fidèle du générique de fin de Portal 2 en JavaScript."
 msgstr ""
 "A faithful Javascript reconstruction of the ending credits of Portal 2."
 
-#: portfolio_main/templates/portfolio_main/index.html:72
+#: portfolio_main/templates/portfolio_main/index.html:71
 msgid "Un générateur de fractales de Mandelbrot personnalisables, avec libpng."
 msgstr "A mandelbrot set computing utility using libpng."
 
-#: portfolio_main/templates/portfolio_main/index.html:77
+#: portfolio_main/templates/portfolio_main/index.html:76
 msgid ""
 "Un générateur de buddhabrots, une représentation alternative de l'ensemble "
 "de Mandelbrot, avec libpng (en chantier)."
@@ -154,11 +181,11 @@ msgstr ""
 "A buddhabrot generator, an alternate representation of the mandelbrot set, "
 "using libpng (WIP)."
 
-#: portfolio_main/templates/portfolio_main/index.html:82
+#: portfolio_main/templates/portfolio_main/index.html:81
 msgid "Un fork du mini-jeu Paper Plane, en C++ avec la SFML."
 msgstr "A C++/SFML fork of the mini-game Paper Plane."
 
-#: portfolio_main/templates/portfolio_main/index.html:87
+#: portfolio_main/templates/portfolio_main/index.html:86
 msgid ""
 "Un ensemble de réflexions sur la représentation médiatique de Christiane "
 "<span class=\"small-caps\">Taubira</span>, réalisé dans un cadre académique."
@@ -166,29 +193,30 @@ msgstr ""
 "A bunch of thinkings made in an academic context about the media "
 "representation of Christiane Taubira, a french political woman."
 
-#: portfolio_main/templates/portfolio_main/index.html:92
+#: portfolio_main/templates/portfolio_main/index.html:91
 msgid ""
 "Un mod du jeu Minecraft fait il y a 5 ans. Il avait réussi à devenir "
 "extrêmement populaire."
-msgstr "A Minecraft mode I made 5 years ago. It managed to become very popular."
+msgstr ""
+"A Minecraft mode I made 5 years ago. It managed to become very popular."
 
-#: portfolio_main/templates/portfolio_main/index.html:97
+#: portfolio_main/templates/portfolio_main/index.html:96
 msgid "Le portfolio de Élisa Péron, artiste et étudiante en arts graphiques."
 msgstr "Élisa Péron's portfolio, a french artist and arts student."
 
-#: portfolio_main/templates/portfolio_main/index.html:103
+#: portfolio_main/templates/portfolio_main/index.html:102
 msgid "Plus à venir."
 msgstr "There's more to come!"
 
-#: portfolio_main/templates/portfolio_main/index.html:110
+#: portfolio_main/templates/portfolio_main/index.html:109
 msgid "Français"
 msgstr "French"
 
-#: portfolio_main/templates/portfolio_main/index.html:111
+#: portfolio_main/templates/portfolio_main/index.html:110
 msgid "Anglais"
 msgstr "English"
 
-#: portfolio_main/templates/portfolio_main/index.html:117
+#: portfolio_main/templates/portfolio_main/index.html:116
 msgid ""
 "\n"
 "\t\tSi vous avez une question, une offre particulière à me faire, contactez-"
@@ -198,12 +226,12 @@ msgstr ""
 "\n"
 "If you have a question, an offer to make, contact me with this form."
 
-#: portfolio_main/templates/portfolio_main/index.html:124
+#: portfolio_main/templates/portfolio_main/index.html:123
 msgid ""
 "Message envoyé. Je vais l'examiner et y répondre dans les plus brefs délais."
 msgstr "Message sent. I'll examine it and answer as soon as possible."
 
-#: portfolio_main/templates/portfolio_main/index.html:126
+#: portfolio_main/templates/portfolio_main/index.html:125
 msgid ""
 "L'envoi de messages est actuellement désactivé. Je vous invite à me "
 "contacter sur les réseaux sociaux."
@@ -211,7 +239,7 @@ msgstr ""
 "This form is currently deactivated. Please contact me on social networks "
 "instead."
 
-#: portfolio_main/templates/portfolio_main/index.html:132
+#: portfolio_main/templates/portfolio_main/index.html:131
 msgid ""
 "Si vous êtes un être doué d'une conscience, et capable d'auto-détermination, "
 "laissez ce champ vide."
@@ -219,11 +247,11 @@ msgstr ""
 "If you are a self-conscious being, capable of self-determination, please "
 "don't fill this field."
 
-#: portfolio_main/templates/portfolio_main/index.html:134
+#: portfolio_main/templates/portfolio_main/index.html:133
 msgid "Envoyer"
 msgstr "Send"
 
-#: portfolio_main/templates/portfolio_main/index.html:144
+#: portfolio_main/templates/portfolio_main/index.html:143
 msgid ""
 "Le thème de ce site est transféré dans le domaine public selon les termes de "
 "la <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.fr\" "

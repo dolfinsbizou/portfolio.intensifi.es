@@ -3,145 +3,15 @@
 <!DOCTYPE html>
 <html lang="{{ active_lang }}">
 <head>
-	<title>Guillaume Jorandon</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'portfolio_main/css/reset.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'portfolio_main/css/default.css' %}" />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
+    <title>Guillaume Jorandon</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio_main/css/reset.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio_main/css/default.css' %}" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 </head>
 <body>
-	<header>
-		<img id="profile-picture" src="{% static 'portfolio_main/img/profile.png' %}" alt="Photo de profil" />
-		<h1>{% trans 'Guillaume <span class="small-caps">Jorandon</span>' %}</h1>
-		<h2>{% trans "Étudiant Ingénieur en science informatique" %}</h2>
-		<nav>
-			<ul>
-				<li><a class="about-link" href="#about">{% trans "À propos" as about_section %}{{ about_section }}</a></li>
-				<li><a class="portfolio-link" href="#portfolio">{% trans "Réalisations" as portfolio_section %}{{ portfolio_section }}</a></li>
-				<li><a class="cv-link" href="#cv">{% trans "Curriculum Vitae" as cv_section %}{{ cv_section }}</a></li>
-				<li><a class="contact-link" href="#contact">{% trans "Contact" as contact_section %}{{ contact_section }}</a></li>
-			</ul>
-		</nav>
-		<ul class="contact-links large">
-			{# <li><a href="https://twitter.com/dolfsquare" title="Twitter"><img src="{% static 'portfolio_main/img/twitter-icon.png' %}" alt="Twitter" /></a></li> #}
-			<li><a href="https://tooting.intensifi.es/@dolfsquare" title="Mastodon"><img src="{% static 'portfolio_main/img/mastodon-icon.png' %}" alt="Mastodon" /></a></li>
-			<li><a href="https://www.linkedin.com/in/guillaume-jorandon-b088a5116/" title="LinkedIn"><img src="{% static 'portfolio_main/img/linkedin-icon.png' %}" alt="LinkedIn" /></a></li>
-			<li><a href="https://github.com/gjorando" title="GitHub"><img src="{% static 'portfolio_main/img/github-icon.png' %}" alt="GitHub" /></a></li>
-		</ul>
-		<ul class="lang-selector">
-			<li><a href="{% url "home" "fr" %}">[FR]</a></li>
-			<li><a href="{% url "home" "en" %}">[EN]</a></li>
-		<ul>
-	</header>
-	<div id="content-wrapper">
-	<section id="about">
-		<h3>{{ about_section }}</h3>
-		<blockquote>
-			<span class="quote-content">{% trans "Nous ne savons pas où nous allons, mais du moins il nous reste bien des choses à faire." %}</span><br /><span class="quote-author">{% trans 'Alan <span class="small-caps">Turing' %}</span>
-		</blockquote>
-		<h4>{% trans "En quelques mots" %}</h4>
-		<p>
-		{% blocktrans %}
-		Je suis en double diplôme ingénieur/master de recherche en <strong>Génie Informatique</strong> à l'<a href="https://www.utc.fr/" title="UTC">Université de Technologie de Compiègne</a>, en France. J'y étudie les <strong>mathématiques</strong> et l' <strong>analyse de données</strong> avancée. Dans le cadre du <a href="https://sites.google.com/site/mineurphiteco/" title="PHITECO">mineur PHITECO</a>, j'étudie aussi les <strong>sciences cognitives</strong> et l'influence des techniques sur les modes de pensée.
-		{% endblocktrans %}
-		</p>
-		<h4>{% trans "Activités et passions" %}</h4>
-		<p>
-		{% blocktrans %}
-		Passionné de musique de touts styles (du jazz au rap, en passant par le trip hop), je fais de la guitare depuis {{ guitar_years }} ans ; j'ai été membre d'un groupe par le biais de <a href="http://assos.utc.fr/larsen/" title="Larsen">Larsen</a>, une association qui fédère les activités musicales à l'UTC. Plus récemment je me suis mis au piano. Je cuisine et j'aime beaucoup lire.
-		{% endblocktrans %}
-		</p>
-		<p>
-		{% blocktrans %}
-		Sensibilisé aux problématiques de droit en ligne et de libertés numériques, j'ai participe en tant que Trésorier, puis Président, à <a href="https://picasoft.net/" title="Picasoft">Picasoft</a>, association étudiante membre du collectif <a href="https://chatons.org/" title="Collectif des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et Solidaires">CHATONS</a>, qui vise à promouvoir et défendre une approche libriste respectueuse de la vie privée et de la liberté d'expression dans le domaine de l'informatique, à travers la formation et la sensibilisation du milieu ingénieur, mais aussi en proposant des alternatives libres aux services privatisants.
-		{% endblocktrans %}
-		</p>
-	</section>
-	<section id="portfolio">
-		<h3>{{ portfolio_section }}</h3>
-		<ul class="button-list projects-list"><!-- 720*230 is the optimal size for each picture -->
-			<li><a href="https://glados.intensifi.es">
-				<img class="preview-image" src="{% static 'portfolio_main/img/aperture.png' %}" alt="Aperture Science" />
-				<h5>Portal2.js</h5>
-				<p>{% trans "Une reconstruction fidèle du générique de fin de Portal 2 en JavaScript." %}</p>
-			</a></li>
-			<li><a href="https://github.com/dolfinsbizou/mandelbrot">
-				<img class="preview-image" src="{% static 'portfolio_main/img/mandelbrot.png' %}" alt="Mandelbrot" />
-				<h5>mandelbrot</h5>
-				<p>{% trans "Un générateur de fractales de Mandelbrot personnalisables, avec libpng." %}</p>
-			</a></li>
-			<li><a href="https://github.com/dolfinsbizou/mandelbrot/tree/buddhabrot">
-				<img class="preview-image" src="{% static 'portfolio_main/img/buddhabrot.png' %}" alt="Buddhabrot" />
-				<h5>buddhabrot</h5>
-				<p>{% trans "Un générateur de buddhabrots, une représentation alternative de l'ensemble de Mandelbrot, avec libpng (en chantier)." %}</p>
-			</a></li>
-			<li><a href="https://github.com/dolfinsbizou/Paper-Plane-Fork">
-				<img class="preview-image" src="{% static 'portfolio_main/img/paper-plane.png' %}" alt="Paper Plane" />
-				<h5>Paper Plane</h5>
-				<p>{% trans "Un fork du mini-jeu Paper Plane, en C++ avec la SFML." %}</p>
-			</a></li>
-			<li><a href="https://blog.intensifi.es/?p=22">
-				<img class="preview-image" src="{% static 'portfolio_main/img/christiane-taubira.png' %}" alt="Christiane Taubira" />
-				<h5>Taubira et le FN</h5>
-				<p>{% trans 'Un ensemble de réflexions sur la représentation médiatique de Christiane <span class="small-caps">Taubira</span>, réalisé dans un cadre académique.' %}</p>
-			</a></li>
-			<li><a href="https://github.com/dolfinsbizou/statues-and-more">
-				<img class="preview-image" src="{% static 'portfolio_main/img/statues.png' %}" />
-				<h5>Statues & more!</h5>
-				<p>{% trans 'Un mod du jeu Minecraft fait il y a 5 ans. Il avait réussi à devenir extrêmement populaire.' %}</p>
-			</a></li>
-			<li><a href="http://zaziss.com">
-				<img class="preview-image" src="{% static 'portfolio_main/img/zaziss.png' %}" />
-				<h5>Zaziss.com</h5>
-				<p>{% trans 'Le portfolio de Élisa Péron, artiste et étudiante en arts graphiques.' %}</p>
-			</a></li>
-
-			<li><a href="#portfolio">
-				<img class="preview-image" src="{% static 'portfolio_main/img/soon.png' %}" alt="Soon" />
-				<h5>Soon...</h5>
-				<p>{% trans "Plus à venir." %}</p>
-			</a></li>
-		</ul>
-	</section>
-	<section id="cv">
-		<h3>{{ cv_section }}</h3>
-		<ul class="button-list">
-			<li><a class="download" href="https://intensifi.es/files/cv.pdf">{% trans "Français" %}</a></li>
-			<li><a class="download" href="https://intensifi.es/files/cv_en.pdf">{% trans "Anglais" %}</a></li>
-		</ul>
-	</section>
-	<aside id="contact">
-		<h3>{{ contact_section }}</h3>
-		<p>
-		{% blocktrans %}
-		Si vous avez une question, une offre particulière à me faire, contactez-moi avec ce formulaire.
-		{% endblocktrans %}
-		</p>
-		{% if error_info != "" %}
-		<div class="error-info">{{ error_info }}</div>
-		{% elif success_info %}
-		<div class="success-info">{% trans "Message envoyé. Je vais l'examiner et y répondre dans les plus brefs délais." %}</div>
-		{% elif not sendmail_enabled %}
-		<div class="warning-info">{% trans "L'envoi de messages est actuellement désactivé. Je vous invite à me contacter sur les réseaux sociaux." %}</div>
-		{% endif %}
-
-		<form method="post" action="{% url "home" active_lang %}#contact">
-			{% csrf_token %}
-			{{ form }}
-			<label for="comment" class="hp">{% trans "Si vous êtes un être doué d'une conscience, et capable d'auto-détermination, laissez ce champ vide." %}</label>
-			<input type="text" name="comment" id="comment" class="hp" value="{{ honeypot_extra_field }}" />
-			<input type="submit" value="{% trans "Envoyer" %}" />
-		</form>
-		<ul class="contact-links narrow">
-			{# <li><a href="https://twitter.com/dolfsquare" title="Twitter"><img src="{% static 'portfolio_main/img/twitter-icon-narrow.png' %}" alt="Twitter" /></a></li> #}
-			<li><a href="https://tooting.intensifi.es/@dolfsquare" title="Mastodon"><img src="{% static 'portfolio_main/img/mastodon-icon-narrow.png' %}" alt="Mastodon" /></a></li>
-			<li><a href="https://www.linkedin.com/in/guillaume-jorandon-b088a5116/" title="LinkedIn"><img src="{% static 'portfolio_main/img/linkedin-icon-narrow.png' %}" alt="LinkedIn" /></a></li>
-			<li><a href="https://github.com/dolfinsbizou" title="GitHub"><img src="{% static 'portfolio_main/img/github-icon-narrow.png' %}" alt="GitHub" /></a></li>
-		</ul>
-	</aside>
-	<footer>
-		<p>{% trans 'Le thème de ce site est transféré dans le domaine public selon les termes de la <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr" title="CC0">licence CC0</a>' %}.</p>
-	</footer>
-	</div>
+    <footer>
+        <p>{% trans 'Le thème de ce site est transféré dans le domaine public selon les termes de la <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr" title="CC0">licence CC0</a>' %}.</p>
+    </footer>
 </body>
 </html>

@@ -9,7 +9,7 @@ from .app_settings import *
 def home(request, lang):
     sendmail_enabled = SENDMAIL
     guitar_years = datetime.now().year - 2003
-    form = ContactForm(request.POST or None)
+    form = ContactForm(request.POST or None, auto_id=False)
     send_message = True
     error_info = ""
 
@@ -18,13 +18,9 @@ def home(request, lang):
     active_lang = get_language
 
     if request.method == 'POST':
-        honeypot_extra_field = request.POST['comment'] or ""
         if not form.is_valid():
             send_message = False
             error_info = _("Formulaire invalide. Vérifiez la saisie et réessayez. ")
-        if honeypot_extra_field != "":
-            send_message = False
-            error_info+= _("Le champ anti-robot a été rempli. ")
         
         if not sendmail_enabled:
             send_message = False

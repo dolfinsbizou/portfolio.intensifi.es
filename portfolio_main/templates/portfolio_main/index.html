@@ -6,12 +6,148 @@
     <title>Guillaume Jorandon</title>
     <link rel="stylesheet" type="text/css" href="{% static 'portfolio_main/css/reset.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'portfolio_main/css/default.css' %}" />
-    <meta charset="utf-8" />
+    <meta charset="utf-9" />
     <meta name="viewport" content="width=device-width" />
 </head>
 <body>
+    <nav><ul>
+        <li><a href="#about">{% trans "À propos" %}</a></li>
+        <li><a href="#phd">{% trans "Doctorat" %}</a></li>
+        <li><a href="#contact">{% trans "Contact" %}</a></li>
+        <li class="nav-lang"><a href="/fr">FR</a></li>
+        <li class="nav-lang"><a href="/en">EN</a></li>
+    </ul></nav>
+    <header>
+        <h1>Guillaume Jorandon</h1>
+        <img id="profile-picture" src="{% static 'portfolio_main/img/profile.png' %}" alt="Guillaume Jorandon" />
+        <p>
+        {% blocktrans %}
+        Scientifique des données diplomé de l'<strong>Université de Technologie de Compiègne</strong> (France). Doctorant en éthique de l'IA pour la santé à l'<strong>Université Laval</strong> (Québec).
+        {% endblocktrans %}
+        </p>
+    </header>
+    <section>
+        <span class="anchor" id="about"></span>
+        <h1>{% trans "Qui suis-je ?" %}</h1>
+        <ul id="projects" class="buttons">
+            <li>
+                <div class="buttons-img"><img src="{% static 'portfolio_main/img/na.png' %}" alt="A" /></div>
+                <a href="#popup_A" class="buttons-title"><h2>Titre A</h2></a>
+                <div id="popup_A" class="buttons-details">
+                    <div class="buttons-popup">
+                        <a class="buttons-popup-close" href="#about">&times;</a>
+                        <h2>Titre A</h2>
+                        <p>
+                        {% blocktrans %}
+                        Une courte description du projet, de ce que j'y fais et de ce que ça m'apporte.
+                        {% endblocktrans %}
+                        </p>
+                        <ul class="buttons-details-links">
+                            <li><a href="#">{% trans "Site du projet" %}</a></li>
+                            <li><a href="#">{% trans "Réseaux sociaux" %}</a></li>
+                        </ul>
+                </div>
+            </li>
+            <li>
+                <div class="buttons-img"><img src="{% static 'portfolio_main/img/na.png' %}" alt="B" /></div>
+                <a href="#popup_B" class="buttons-title"><h2>Titre B</h2></a>
+                <div id="popup_B" class="buttons-details">
+                    <div class="buttons-popup">
+                        <a class="buttons-popup-close" href="#about">&times;</a>
+                        <h2>Titre B</h2>
+                        <p>
+                        {% blocktrans %}
+                        Une courte description du projet, de ce que j'y fais et de ce que ça m'apporte.
+                        {% endblocktrans %}
+                        </p>
+                        <ul class="buttons-details-links">
+                            <li><a href="#">{% trans "Site du projet" %}</a></li>
+                            <li><a href="#">{% trans "Réseaux sociaux" %}</a></li>
+                        </ul>
+                </div>
+            </li>
+            <li>
+                <div class="buttons-img"><img src="{% static 'portfolio_main/img/na.png' %}" alt="C" /></div>
+                <a href="#popup_C" class="buttons-title"><h2>Titre C</h2></a>
+                <div id="popup_C" class="buttons-details">
+                    <div class="buttons-popup">
+                        <a class="buttons-popup-close" href="#about">&times;</a>
+                        <h2>Titre C</h2>
+                        <p>
+                        {% blocktrans %}
+                        Une courte description du projet, de ce que j'y fais et de ce que ça m'apporte.
+                        {% endblocktrans %}
+                        </p>
+                        <ul class="buttons-details-links">
+                            <li><a href="#">{% trans "Site du projet" %}</a></li>
+                            <li><a href="#">{% trans "Réseaux sociaux" %}</a></li>
+                        </ul>
+                </div>
+            </li>
+            <li>
+                <div class="buttons-img"><img src="{% static 'portfolio_main/img/na.png' %}" alt="D" /></div>
+                <a href="#popup_D" class="buttons-title"><h2>Titre D</h2></a>
+                <div id="popup_D" class="buttons-details">
+                    <div class="buttons-popup">
+                        <a class="buttons-popup-close" href="#about">&times;</a>
+                        <h2>Titre D</h2>
+                        <p>
+                        {% blocktrans %}
+                        Une courte description du projet, de ce que j'y fais et de ce que ça m'apporte.
+                        {% endblocktrans %}
+                        </p>
+                        <ul class="buttons-details-links">
+                            <li><a href="#">{% trans "Site du projet" %}</a></li>
+                            <li><a href="#">{% trans "Réseaux sociaux" %}</a></li>
+                        </ul>
+                </div>
+            </li>
+        </ul>
+        <p>
+        {% blocktrans %}
+        Proin feugiat, lorem in venenatis vestibulum, turpis purus elementum orci, id lacinia velit ex ut augue. Donec luctus nunc non lorem lacinia consectetur. Praesent egestas risus eget urna molestie, tempor congue tortor lobortis. Pellentesque sed lorem quis felis ultricies tincidunt. Sed nec vehicula enim. Quisque sodales nibh id porta pellentesque. Sed ultricies tincidunt mauris et mattis. 
+        {% endblocktrans %}
+        </p>
+        <p class="clear-floats">
+        {% blocktrans %}
+        Vous pouvez télécharger mon cv en <a href="https://portfolio.intensifi.es/files/cv.pdf">français</a> et en <a href="https://portfolio.intensifi.es/files/cv_en.pdf">anglais</a>.
+        {% endblocktrans %}
+        </p>
+    </section>
+    <section>
+        <span class="anchor" id="phd"></span>
+        <h1>{% trans "Doctorat" %}</h1>
+        <p>
+        {% blocktrans %}
+        Lipsum.
+        {% endblocktrans %}
+        </p>
+    </section>
+    <section>
+        <span class="anchor" id="contact"></span>
+        <h1>{% trans "Contactez-moi !" %}</h1>
+        <p>
+        {% blocktrans %}
+        Vous souhaitez discuter ? Me poser une question ? Me contacter ? Utilisez ce formulaire ou contactez moi via mes réseaux sociaux !
+        {% endblocktrans %}
+        </p>
+        {% if error_info != "" %}
+        <div class="error-info">{{ error_info }}</div>
+        {% elif success_info %}
+        <div class="success-info">{% trans "Message envoyé. Je vais l'examiner et y répondre dans les plus brefs délais." %}</div>
+        {% elif not sendmail_enabled %}
+        <div class="warning-info">{% trans "L'envoi de messages est actuellement désactivé. Je vous invite à me contacter sur les réseaux sociaux." %}</div>
+        {% endif %}
+
+        <form method="post" action="{% url "home" active_lang %}#contact">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="{% trans "Envoyer" %}" />
+        </form>
+    </section>
     <footer>
         <p>{% trans 'Le thème de ce site est transféré dans le domaine public selon les termes de la <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr" title="CC0">licence CC0</a>' %}.</p>
+        <p>{% blocktrans %}La police de caractères <a href="http://mplus-fonts.osdn.jp/">M<span style="vertical-align: super; font-size: 0.8em; line-height: 0;">+</span> P Type-1</a> est mise à disposition selon les dispositions de la licence {% endblocktrans %}<a href="{% static 'portfolio_main/fonts/MPLUS1p/OFL.txt' %}">OFL</a>{% blocktrans %}.{% endblocktrans %}</p>
     </footer>
 </body>
 </html>

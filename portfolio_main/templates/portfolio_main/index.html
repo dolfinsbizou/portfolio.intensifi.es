@@ -22,18 +22,30 @@
         <img id="profile-picture" src="{% static 'portfolio_main/img/profile.png' %}" alt="Guillaume Jorandon" />
         <p>
         {% blocktrans %}
-        Scientifique des données diplomé de l'<strong>Université de Technologie de Compiègne</strong> (France). Doctorant en éthique de l'IA pour la santé à l'<strong>Université Laval</strong> (Québec).
+        Queer français, navigue à voile et à vapeur. Scientifique des données, doctorant en éthique de l'IA pour la santé à l'<strong>Université Laval</strong> (Québec).
         {% endblocktrans %}
         </p>
     </header>
     <section class="flex-section">
         <span class="anchor" id="about"></span>
         <h1>{% trans "Qui suis-je ?" %}</h1>
-        <p class="flex-aside">
-        {% blocktrans %}
-        Proin feugiat, lorem in venenatis vestibulum, turpis purus elementum orci, id lacinia velit ex ut augue. Donec luctus nunc non lorem lacinia consectetur. Praesent egestas risus eget urna molestie, tempor congue tortor lobortis. Pellentesque sed lorem quis felis ultricies tincidunt. Sed nec vehicula enim. Quisque sodales nibh id porta pellentesque. Sed ultricies tincidunt mauris et mattis. 
-        {% endblocktrans %}
-        </p>
+        <div class="flex-aside">
+            <p>
+            {% blocktrans %}
+            Bienvenue chez moi ! Je m'appelle Guillaume, et je suis <strong>ingénieur en science des données</strong> diplômé de l'<abbr title="Université de Technologie de Compiègne">UTC</abbr>, en France. J'y ai étudié les mathématiques et l'<abbr title="fouille de données, entrepôts de données, apprentissage machine, apprentissage profond, recherche opérationnelle et optimisation">analyse de données avancée</abbr>. Dans le cadre du mineur <a href="https://sites.google.com/site/mineurphiteco/" title="Site du mineur PHITECO">PHITECO</a>, j'ai eu une formation cohérente en <strong>sciences cognitives</strong> et philosophie des techniques.
+            {% endblocktrans %}
+            </p>
+            <p>
+            {% blocktrans %}
+            Je suis actuellement en doctorat sur mesure à l'Université Laval, à Québec, en éthique de l'intelligence artificielle dans le domaine de la santé.
+            {% endblocktrans %}
+            </p>
+            <p>
+            {% blocktrans %}
+            Sur mon temps libre, il m'arrive de bidouiller des trucs. N'hésitez pas à jeter un œil !
+            {% endblocktrans %}
+            </p>
+        </div>
         <ul class="buttons flex-aside">
             <li>
                 <div class="buttons-img"><img src="{% static 'portfolio_main/img/na.png' %}" alt="A" /></div>
@@ -110,7 +122,7 @@
         </ul>
         <p class="clear-floats">
         {% blocktrans %}
-        Vous pouvez télécharger mon cv en <a href="https://portfolio.intensifi.es/files/cv.pdf">français</a> et en <a href="https://portfolio.intensifi.es/files/cv_en.pdf">anglais</a>.
+        Si vous désirez avoir un résumé plus détaillé de mon parcours, vous pouvez télécharger mon CV en <a href="https://portfolio.intensifi.es/files/cv.pdf">français</a> et en <a href="https://portfolio.intensifi.es/files/cv_en.pdf">anglais</a>.
         {% endblocktrans %}
         </p>
     </section>

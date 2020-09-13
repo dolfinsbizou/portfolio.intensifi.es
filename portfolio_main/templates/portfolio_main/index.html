@@ -11,9 +11,9 @@
 </head>
 <body>
     <nav><ul>
-        <li><a href="#about">{% trans "À propos" %}</a></li>
-        <li><a href="#phd">{% trans "Doctorat" %}</a></li>
-        <li><a href="#contact">{% trans "Contact" %}</a></li>
+        <li class="nav-anchor"><a href="#about">{% trans "À propos" %}</a></li>
+        <li class="nav-anchor"><a href="#phd">{% trans "Doctorat" %}</a></li>
+        <li class="nav-anchor"><a href="#contact">{% trans "Contact" %}</a></li>
         <li class="nav-lang"><a href="/fr">FR</a></li>
         <li class="nav-lang"><a href="/en">EN</a></li>
     </ul></nav>
@@ -26,10 +26,15 @@
         {% endblocktrans %}
         </p>
     </header>
-    <section>
+    <section class="flex-section">
         <span class="anchor" id="about"></span>
         <h1>{% trans "Qui suis-je ?" %}</h1>
-        <ul id="projects" class="buttons">
+        <p class="flex-aside">
+        {% blocktrans %}
+        Proin feugiat, lorem in venenatis vestibulum, turpis purus elementum orci, id lacinia velit ex ut augue. Donec luctus nunc non lorem lacinia consectetur. Praesent egestas risus eget urna molestie, tempor congue tortor lobortis. Pellentesque sed lorem quis felis ultricies tincidunt. Sed nec vehicula enim. Quisque sodales nibh id porta pellentesque. Sed ultricies tincidunt mauris et mattis. 
+        {% endblocktrans %}
+        </p>
+        <ul class="buttons flex-aside">
             <li>
                 <div class="buttons-img"><img src="{% static 'portfolio_main/img/na.png' %}" alt="A" /></div>
                 <a href="#popup_A" class="buttons-title"><h2>Titre A</h2></a>
@@ -103,11 +108,6 @@
                 </div>
             </li>
         </ul>
-        <p>
-        {% blocktrans %}
-        Proin feugiat, lorem in venenatis vestibulum, turpis purus elementum orci, id lacinia velit ex ut augue. Donec luctus nunc non lorem lacinia consectetur. Praesent egestas risus eget urna molestie, tempor congue tortor lobortis. Pellentesque sed lorem quis felis ultricies tincidunt. Sed nec vehicula enim. Quisque sodales nibh id porta pellentesque. Sed ultricies tincidunt mauris et mattis. 
-        {% endblocktrans %}
-        </p>
         <p class="clear-floats">
         {% blocktrans %}
         Vous pouvez télécharger mon cv en <a href="https://portfolio.intensifi.es/files/cv.pdf">français</a> et en <a href="https://portfolio.intensifi.es/files/cv_en.pdf">anglais</a>.

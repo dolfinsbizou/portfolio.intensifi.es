@@ -1,7 +1,7 @@
-/* General section */
-
 /* Color palette: #161413 #B8A1CE #F58F29 #B3B7EE #FBF9FF */
 /* Color names: smoky black, wisteria, dark orange, maximum blue purple, ghost white*/
+
+/* General */
 
 html, body
 {
@@ -13,7 +13,8 @@ html, body
 
 p
 {
-    margin-bottom: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
 a
@@ -60,7 +61,6 @@ nav
     position: sticky;
     top: 0;
     margin-bottom: 1em;
-    width: 100vw;
     background: #161413;
     z-index: 100;
 }
@@ -130,10 +130,20 @@ header
 
 /* Sections */
 
-#projects
+.flex-section
 {
-    width: 50%;
-    float: right;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-section>*
+{
+    flex: 1 100%;
+}
+
+.flex-aside
+{
+    flex: 1 0px;
 }
 
 /* Buttons */
@@ -213,7 +223,6 @@ header
     background: #FBF9FF;
     color: #161413;
     margin: 70px auto;
-    border-radius: 0.5em;
     width: 30%;
     max-height: 30%;
     overflow: auto;
@@ -256,6 +265,7 @@ header
     border-top: 1px solid #161413;
     padding-top: 1em;
     margin-top: 1em;
+    margin-bottom: 2em;
     line-height: 1.2em;
 }
 
@@ -277,12 +287,14 @@ form
 
 form input[type="text"]
 {
+    min-width: 0;
     flex: 1 auto;
     margin: 0.2em;
 }
 
 form textarea
 {
+    min-width: 0;
     resize: none;
     height: 4em;
 }
@@ -347,6 +359,95 @@ footer
     margin-top: 1em;
     padding: 2em;
     background: #B3B7EE22;
+}
+
+/* Responsive */
+
+@media all and (orientation: portrait) and (max-width: 1024px)
+{
+    /* General */
+
+    h1, h2, h3, h4, h5, h6
+    {
+        text-align: left;
+    }
+
+    .anchor
+    {
+        position: static;
+    }
+
+    /* Nav bar */
+    
+    nav
+    {
+        background: #16141300;
+        position: static;
+    }
+
+    nav>ul:first-of-type
+    {
+        justify-content: left;
+    }
+
+    nav>ul:first-of-type li:hover
+    {
+        background: #B8A1CE00;
+    }
+
+    nav>ul:first-of-type li:hover a
+    {
+        color: #B8A1CE;
+    }
+
+    .nav-anchor
+    {
+        display: none;
+    }
+
+    /* Section+Header commonalities */
+
+    section, header
+    {
+        width: 80%;
+    }
+
+    /* Header */
+
+    #profile-picture
+    {
+        border-radius: 1em;
+    }
+
+    /* Sections */
+
+    .flex-aside
+    {
+        flex: 1 100%;
+    }
+
+    /* Buttons */
+
+    .buttons-title h2
+    {
+        text-align: left;
+        font-size: 2em;
+        top: 3%;
+        left: 3%;
+        transform: translate(0, 0);
+    }
+
+    .buttons-title
+    {
+        background: #B3B7EE00;
+        opacity: 1;
+    }
+
+    .buttons-popup
+    {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* Fonts */

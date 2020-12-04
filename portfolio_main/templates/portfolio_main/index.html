@@ -131,7 +131,17 @@
         <h1>{% trans "Doctorat" %}</h1>
         <p>
         {% blocktrans %}
-        Lipsum.
+        Mon sujet de thèse porte sur les pseudo-médecines et science des données : étude de l’impact des algorithmes apprenants sur la propagation de la désinformation dans le domaine de la santé.
+        {% endblocktrans %}
+        </p>
+        <p>
+        {% blocktrans %}
+        Le projet vise à étudier les effets sur le débat public de l'intelligence artificielle et de la science des données, et de leurs usages par les nouveaux diffuseurs de contenu sur le web. Il se propose d'aborder les aspects éthiques des algorithmes apprenants et des filtres de recommandation utilisés par les acteurs d'Internet pour la présentation et la sélection du contenu aux internautes. Plus particulièrement, le projet pose la question de la conséquence de tels algorithmes sur la santé publique, notamment dans la propagation de la désinformation médicale et des pseudo-médecines.
+        {% endblocktrans %}
+        </p>
+        <p>
+        {% blocktrans %}
+        Ce projet se propose donc de porter un regard critique sur les techniques de la science des données, et sur leurs utilisations. Le point de vue développé intégrera les savoirs de différentes discipline des sciences sociales (éthique, sciences de la communication, philosophie des techniques) et influencera le développement de solutions techniques et de conseils pour la mise en oeuvre d'une IA éthique et durable. Le projet comporte donc un double-volet technique et philosophique, avec une perspective d'intégration interdisciplinaire.
         {% endblocktrans %}
         </p>
     </section>
@@ -140,7 +150,7 @@
         <h1>{% trans "Contactez-moi !" %}</h1>
         <p>
         {% blocktrans %}
-        Vous souhaitez discuter ? Me poser une question ? Me contacter ? Utilisez ce formulaire ou contactez moi via mes réseaux sociaux !
+        Vous souhaitez discuter ? Me poser une question ? Me contacter ? Utilisez ce formulaire ou contactez-moi via mes réseaux sociaux !
         {% endblocktrans %}
         </p>
         {% if error_info != "" %}
@@ -156,6 +166,10 @@
             {{ form }}
             <input type="submit" value="{% trans "Envoyer" %}" />
         </form>
+        <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/guillaume-jorandon-b088a5116/" title="LinkedIn"><img src="/static/portfolio_main/img/linkedin-icon.png" alt="LinkedIn" /></a></li>
+	    <li><a href="https://github.com/gjorando" title="GitHub"><img src="/static/portfolio_main/img/github-icon.png" alt="GitHub" /></a></li>
+        </ul>
     </section>
     <footer>
         <p>{% trans 'Le thème de ce site est transféré dans le domaine public selon les termes de la <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr" title="CC0">licence CC0</a>' %}.</p>

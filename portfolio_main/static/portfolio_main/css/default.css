@@ -16,6 +16,7 @@ p
     margin-top: 0.25em;
     margin-bottom: 0.25em;
     line-height: 1.2em;
+    text-align: justify;
 }
 
 a
@@ -161,6 +162,7 @@ header
     flex-flow: row wrap;
     list-style-type: none;
     padding: 0.2em;
+    margin: 1em;
 }
 
 .buttons>li
@@ -280,6 +282,27 @@ header
     color: #5D3F78;
 }
 
+/* Contact links */
+
+.contact-links
+{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.contact-links li
+{
+    display: inline;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.contact-links img
+{
+    width: 2.6em;
+}
+
 /* Form */
 
 form
@@ -361,10 +384,14 @@ form>*
 
 footer
 {
-    text-align: center;
     margin-top: 1em;
     padding: 2em;
     background: #B3B7EE22;
+}
+
+footer p
+{
+    text-align: center;
 }
 
 /* Responsive */
@@ -466,6 +493,13 @@ footer
     {
         width: 100%;
         height: 100%;
+    }
+
+    /* Footer */
+
+    footer p
+    {
+        text-align: justify;
     }
 }
 

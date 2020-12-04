@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-04 10:29+0000\n"
-"PO-Revision-Date: 2020-12-04 10:29+0000\n"
+"POT-Creation-Date: 2020-12-04 14:22+0000\n"
+"PO-Revision-Date: 2020-12-04 14:18+0000\n"
 "Last-Translator: Guillaume Jorandon <jorandon@gmail.com>\n"
 "Language-Team: \n"
 "Language: French, English\n"
@@ -42,7 +42,7 @@ msgid "À propos"
 msgstr "About"
 
 #: portfolio_main/templates/portfolio_main/index.html:15
-#: portfolio_main/templates/portfolio_main/index.html:131
+#: portfolio_main/templates/portfolio_main/index.html:134
 msgid "Doctorat"
 msgstr "PhD"
 
@@ -59,7 +59,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        French queer who plays for both teams. Data scientist, PhD in AI ethics for heath at the <strong>Laval University</strong> (Québec).\n"
+"        French queer who plays for both teams. Data scientist, PhD in AI "
+"ethics for heath at the <strong>Laval University</strong> (Québec).\n"
 "        "
 
 #: portfolio_main/templates/portfolio_main/index.html:31
@@ -82,8 +83,14 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"            Welcome to my place! My name's Guillaume, I am a <strong>data science engineer</strong> who graduated from the <abbr title="
-"\"Université de Technologie de Compiègnr\">UTC</abbr>, France. Here, I studied math and <abbr title=\"data mining, data warehouses, machine learning, deep learning, operations research and optimization\">advanced data analysis</abbr>. I also received an education on <strong>cognitive science</strong> and philosophy of technics, in the context of the <a href=\"https://sites.google.com/site/mineurphiteco/\" title=\"Website (in French)\">PHITECO</a> minor.\n"
+"            Welcome to my place! My name's Guillaume, I am a <strong>data "
+"science engineer</strong> who graduated from the <abbr title=\"Université de "
+"Technologie de Compiègnr\">UTC</abbr>, France. Here, I studied math and "
+"<abbr title=\"data mining, data warehouses, machine learning, deep learning, "
+"operations research and optimization\">advanced data analysis</abbr>. I also "
+"received an education on <strong>cognitive science</strong> and philosophy "
+"of technics, in the context of the <a href=\"https://sites.google.com/site/"
+"mineurphiteco/\" title=\"Website (in French)\">PHITECO</a> minor.\n"
 "            "
 
 #: portfolio_main/templates/portfolio_main/index.html:39
@@ -95,7 +102,8 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"           I am currently a PhD student at the Laval University, Québec, in Ai ethics in public health.\n"
+"           I am currently a PhD student at the Laval University, Québec, in "
+"Ai ethics in public health.\n"
 "            "
 
 #: portfolio_main/templates/portfolio_main/index.html:44
@@ -110,31 +118,71 @@ msgstr ""
 "            "
 
 #: portfolio_main/templates/portfolio_main/index.html:58
-#: portfolio_main/templates/portfolio_main/index.html:76
-#: portfolio_main/templates/portfolio_main/index.html:94
-#: portfolio_main/templates/portfolio_main/index.html:112
 msgid ""
 "\n"
-"                        Une courte description du projet, de ce que j'y fais "
-"et de ce que ça m'apporte.\n"
+"                        Un générateur de fractales de <a href=\"https://fr."
+"wikipedia.org/wiki/Ensemble_de_Mandelbrot\">Mandelbrot</a>, de <a href="
+"\"https://fr.wikipedia.org/wiki/Ensemble_de_Julia\">Julia</a> et de <a href="
+"\"https://fr.wikipedia.org/wiki/Buddhabrot\">Buddhabrot</a>, codé en C++ "
+"avec libpng.\n"
 "                        "
 msgstr ""
-
-#: portfolio_main/templates/portfolio_main/index.html:63
-#: portfolio_main/templates/portfolio_main/index.html:81
-#: portfolio_main/templates/portfolio_main/index.html:99
-#: portfolio_main/templates/portfolio_main/index.html:117
-msgid "Site du projet"
-msgstr ""
+"\n"
+"                        A <a href=\"https://en.wikipedia.org/wiki/"
+"Mandelbrot_set\">Mandelbrot</a>, <a href=\"https://en.wikipedia.org/wiki/"
+"Julia_set\">Julia</a>, and <a href=\"https://en.wikipedia.org/wiki/Buddhabrot"
+"\">Buddhabrot</a> fractal generator, coded in C++ with libpng.\n"
+"                        "
 
 #: portfolio_main/templates/portfolio_main/index.html:64
-#: portfolio_main/templates/portfolio_main/index.html:82
-#: portfolio_main/templates/portfolio_main/index.html:100
-#: portfolio_main/templates/portfolio_main/index.html:118
-msgid "Réseaux sociaux"
-msgstr ""
+msgid "Gallerie"
+msgstr "Gallery"
 
-#: portfolio_main/templates/portfolio_main/index.html:124
+#: portfolio_main/templates/portfolio_main/index.html:76
+msgid ""
+"\n"
+"                        Une implémentation PyTorch de deux publications de "
+"transfert de style : un algorithme neuronal capable d'appliquer à une "
+"photographie le style artistique d'une peinture.\n"
+"                        "
+msgstr ""
+"\n"
+"                        A PyTorch implementation of two papers on style transfer: a deep learning algorithm that can transfer on a photography the artistic style of a painting.\n"
+"                        "
+
+#: portfolio_main/templates/portfolio_main/index.html:80
+msgid "Sources"
+msgstr "Sources"
+
+#: portfolio_main/templates/portfolio_main/index.html:98
+msgid ""
+"\n"
+"                        Un mod Minecraft, créé quand j'avais 15 ans, et qui "
+"a connu à l'époque un certain succès. Il a été le premier projet que j'ai "
+"mené de sa conception jusqu'à sa distribution, utilisant des liens de "
+"téléchargement monétisés pour récolter les fruits de mon travail.\n"
+"                        "
+msgstr ""
+"\n"
+"                        A Minecraft mod I made when I was 15, that managed to be widely adopted. It was the first project I actually worked on, from its design to its distribution, using download links with ads to get paid.\n"
+"                        "
+
+#: portfolio_main/templates/portfolio_main/index.html:115
+msgid ""
+"\n"
+"                        Une reconstruction fidèle du générique de fin de "
+"Portal 2, réalisée il y a bien trop longtemps en JavaScript.\n"
+"                        "
+msgstr ""
+"\n"
+"                        A faithful recreation of Portal 2's end credits I made way too long ago in JavaScript."
+"                        "
+
+#: portfolio_main/templates/portfolio_main/index.html:120
+msgid "Site web"
+msgstr "Website"
+
+#: portfolio_main/templates/portfolio_main/index.html:127
 msgid ""
 "\n"
 "        Si vous désirez avoir un résumé plus détaillé de mon parcours, vous "
@@ -144,12 +192,13 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        If you want to take a more detailed look on my background, please download my resume in <a href=\"https://portfolio.intensifi.es/files/"
-"cv.pdf\">French</a> or in <a href=\"https://portfolio.intensifi.es/files/"
-"cv_en.pdf\">english</a>.\n"
+"        If you want to take a more detailed look on my background, please "
+"download my resume in <a href=\"https://portfolio.intensifi.es/files/cv.pdf"
+"\">French</a> or in <a href=\"https://portfolio.intensifi.es/files/cv_en.pdf"
+"\">english</a>.\n"
 "        "
 
-#: portfolio_main/templates/portfolio_main/index.html:133
+#: portfolio_main/templates/portfolio_main/index.html:136
 msgid ""
 "\n"
 "        Mon sujet de thèse porte sur les pseudo-médecines et science des "
@@ -158,10 +207,11 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        My PhD thesis is about pseudo-medicine and data science: study of the effects of learning machines on the spread of health misinformation.\n"
+"        My PhD thesis is about pseudo-medicine and data science: study of "
+"the effects of learning machines on the spread of health misinformation.\n"
 "        "
 
-#: portfolio_main/templates/portfolio_main/index.html:138
+#: portfolio_main/templates/portfolio_main/index.html:141
 msgid ""
 "\n"
 "        Le projet vise à étudier les effets sur le débat public de "
@@ -176,10 +226,16 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        This project studies the consequences of AI systems and data science on public discourse, as well as their usage by the new content providers on the Web. It will tackle the ethical aspects of learning algorithms and recommendation filters implemented by Internet companies to select and present content to the user. Specifically, the project investigates the consequences of such algorithms on public health, especially in the propagation of medical misinformation and pseudomedicine.\n"
+"        This project studies the consequences of AI systems and data science "
+"on public discourse, as well as their usage by the new content providers on "
+"the Web. It will tackle the ethical aspects of learning algorithms and "
+"recommendation filters implemented by Internet companies to select and "
+"present content to the user. Specifically, the project investigates the "
+"consequences of such algorithms on public health, especially in the "
+"propagation of medical misinformation and pseudomedicine.\n"
 "        "
 
-#: portfolio_main/templates/portfolio_main/index.html:143
+#: portfolio_main/templates/portfolio_main/index.html:146
 msgid ""
 "\n"
 "        Ce projet se propose donc de porter un regard critique sur les "
@@ -193,14 +249,20 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        This project aims at taking a critical oversight on data science techniques and their use. Various knowledge from different fields of humanities and social science will be applied ( ethics, communication studies, philosophy of techniques) and will guide the development of technical solutions, as well as recommendations for the implementation of ethical and sustainable AI. For this reason we will need both technical and philosophical research, working towards interdisciplinary integration.\n"
+"        This project aims at taking a critical oversight on data science "
+"techniques and their use. Various knowledge from different fields of "
+"humanities and social science will be applied ( ethics, communication "
+"studies, philosophy of techniques) and will guide the development of "
+"technical solutions, as well as recommendations for the implementation of "
+"ethical and sustainable AI. For this reason we will need both technical and "
+"philosophical research, working towards interdisciplinary integration.\n"
 "        "
 
-#: portfolio_main/templates/portfolio_main/index.html:150
+#: portfolio_main/templates/portfolio_main/index.html:153
 msgid "Contactez-moi !"
 msgstr "Contact me!"
 
-#: portfolio_main/templates/portfolio_main/index.html:152
+#: portfolio_main/templates/portfolio_main/index.html:155
 msgid ""
 "\n"
 "        Vous souhaitez discuter ? Me poser une question ? Me contacter ? "
@@ -208,39 +270,49 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        Do you want to talk? Ask me a question? Contact me? Fill this form or reach out to me directly via social media!\n"
+"        Do you want to talk? Ask me a question? Contact me? Fill this form "
+"or reach out to me directly via social media!\n"
 "        "
 
-#: portfolio_main/templates/portfolio_main/index.html:159
+#: portfolio_main/templates/portfolio_main/index.html:162
 msgid ""
 "Message envoyé. Je vais l'examiner et y répondre dans les plus brefs délais."
-msgstr "Message sent. I'll examine it and come back to you as soon as possible."
+msgstr ""
+"Message sent. I'll examine it and come back to you as soon as possible."
 
-#: portfolio_main/templates/portfolio_main/index.html:161
+#: portfolio_main/templates/portfolio_main/index.html:164
 msgid ""
 "L'envoi de messages est actuellement désactivé. Je vous invite à me "
 "contacter sur les réseaux sociaux."
-msgstr "This form is currently deactivated. Please contact me on social media instead."
+msgstr ""
+"This form is currently deactivated. Please contact me on social media "
+"instead."
 
-#: portfolio_main/templates/portfolio_main/index.html:167
+#: portfolio_main/templates/portfolio_main/index.html:170
 msgid "Envoyer"
 msgstr "Send"
 
-#: portfolio_main/templates/portfolio_main/index.html:171
+#: portfolio_main/templates/portfolio_main/index.html:178
 msgid ""
 "Le thème de ce site est transféré dans le domaine public selon les termes de "
 "la <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.fr\" "
 "title=\"CC0\">licence CC0</a>"
-msgstr "The theme of this website is transfered in the public domain according to the terms of the <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.fr\" title=\"CC0\">CC0 license</a>"
+msgstr ""
+"The theme of this website is transfered in the public domain according to "
+"the terms of the <a href=\"https://creativecommons.org/publicdomain/zero/1.0/"
+"deed.fr\" title=\"CC0\">CC0 license</a>"
 
-#: portfolio_main/templates/portfolio_main/index.html:172
+#: portfolio_main/templates/portfolio_main/index.html:179
 msgid ""
 "La police de caractères <a href=\"http://mplus-fonts.osdn.jp/\">M<span style="
 "\"vertical-align: super; font-size: 0.8em; line-height: 0;\">+</span> P "
 "Type-1</a> est mise à disposition selon les dispositions de la licence "
-msgstr "The <a href=\"http://mplus-fonts.osdn.jp/\">M<span style=\"vertical-align: super; font-size: 0.8em; line-height: 0;\">+</span> P Type-1</a> font is distributed according to the terms of the "
+msgstr ""
+"The <a href=\"http://mplus-fonts.osdn.jp/\">M<span style=\"vertical-align: "
+"super; font-size: 0.8em; line-height: 0;\">+</span> P Type-1</a> font is "
+"distributed according to the terms of the "
 
-#: portfolio_main/templates/portfolio_main/index.html:172
+#: portfolio_main/templates/portfolio_main/index.html:179
 msgid "."
 msgstr " license."
 
@@ -252,20 +324,26 @@ msgstr "Invalid form. Check your input and try again."
 msgid ""
 "Toutes mes excuses. L'envoi de mail est actuellement désactivé. N'hésitez "
 "pas à me contacter sur les réseaux sociaux ! "
-msgstr "I am sorry. This form is currently deactivated. Don't hesitate to contact me on social media!"
+msgstr ""
+"I am sorry. This form is currently deactivated. Don't hesitate to contact me "
+"on social media!"
 
 #: portfolio_main/views.py:35
 #, python-brace-format
 msgid ""
 "Reçu de {sender}\n"
 "{message}"
-msgstr "Received from {sender}\n{message}"
+msgstr ""
+"Received from {sender}\n"
+"{message}"
 
 #: portfolio_main/views.py:39
 msgid ""
 "L'envoi a échoué pour une raison inconnue. Réessayez plus tard ou contactez "
 "moi sur les réseaux sociaux."
-msgstr "The sending failed for an unknown reason. Try again later or contact me on social media."
+msgstr ""
+"The sending failed for an unknown reason. Try again later or contact me on "
+"social media."
 
 #: portfolio_main/views.py:48
 msgid "Confirmation d'envoi - portfolio.intensifi.es"
@@ -286,10 +364,13 @@ msgid ""
 "Ne répondez pas directement à ce mail ! Je ne le recevrai pas. Contactez moi "
 "plutôt avec le formulaire sur portfolio.intensifi.es."
 msgstr ""
-"You send me an email via portfolio.intensifi.es. I'll look into it and answer as soon as possible.\n"
+"You send me an email via portfolio.intensifi.es. I'll look into it and "
+"answer as soon as possible.\n"
 "Subject: {subject}\n"
 "Message:\n"
 "{message}\n"
 "\n"
-"If you didn't send me this message, please ignore this email. Sorry for the inconvenience, don't hesitate to contact me if it happens again.\n"
-"Don't answer directly to this email! I won't see it. Contact me instead using the form on portfolio.intensifi.es."
+"If you didn't send me this message, please ignore this email. Sorry for the "
+"inconvenience, don't hesitate to contact me if it happens again.\n"
+"Don't answer directly to this email! I won't see it. Contact me instead "
+"using the form on portfolio.intensifi.es."

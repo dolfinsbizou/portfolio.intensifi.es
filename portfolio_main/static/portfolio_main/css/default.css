@@ -182,6 +182,8 @@ header
     background: #B3B7EEBB;
     opacity: 0;
     transition: 1s;
+    display: flex;
+    align-items: center;
 }
 
 .buttons>li:hover .buttons-title
@@ -190,14 +192,18 @@ header
     transition: 1s;
 }
 
+.buttons>li:hover .buttons-title
+{
+    text-decoration: none;
+}
+
 .buttons-title h2
 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 100%;
     color: #161413;
-    font-size: 4em;
+    font-size: 2.4em;
+    word-wrap: break-word;
 }
 
 .buttons-img img
@@ -246,6 +252,12 @@ header
     margin-bottom: 0.7em;
 }
 
+.buttons-popup h3
+{
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
 .buttons-popup-close
 {
     display: inline-block;
@@ -277,7 +289,7 @@ header
     margin-bottom: 2em;
 }
 
-.buttons-details-links a
+.buttons-details a
 {
     color: #5D3F78;
 }

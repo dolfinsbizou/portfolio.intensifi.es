@@ -48,74 +48,77 @@
         </div>
         <ul class="buttons flex-aside">
             <li>
-                <div class="buttons-img"><img src="{% static 'portfolio_main/img/na.png' %}" alt="A" /></div>
-                <a href="#popup_A" class="buttons-title"><h2>Titre A</h2></a>
+                <div class="buttons-img"><img src="{% static 'portfolio_main/img/mandelbrot.png' %}" alt="Mandelbrot" /></div>
+                <a href="#popup_A" class="buttons-title"><h2>mandelbrot</h2></a>
                 <div id="popup_A" class="buttons-details">
                     <div class="buttons-popup">
                         <a class="buttons-popup-close" href="#about">&times;</a>
-                        <h2>Titre A</h2>
+                        <h2>mandelbrot</h2>
                         <p>
                         {% blocktrans %}
-                        Une courte description du projet, de ce que j'y fais et de ce que ça m'apporte.
+                        Un générateur de fractales de <a href="https://fr.wikipedia.org/wiki/Ensemble_de_Mandelbrot">Mandelbrot</a>, de <a href="https://fr.wikipedia.org/wiki/Ensemble_de_Julia">Julia</a> et de <a href="https://fr.wikipedia.org/wiki/Buddhabrot">Buddhabrot</a>, codé en C++ avec libpng.
                         {% endblocktrans %}
                         </p>
                         <ul class="buttons-details-links">
-                            <li><a href="#">{% trans "Site du projet" %}</a></li>
-                            <li><a href="#">{% trans "Réseaux sociaux" %}</a></li>
+                            <li><a href="https://github.com/gjorando/mandelbrot">Github</a></li>
+                            <!--<li><a href="#">{% trans "Gallerie" %}</a></li>-->
                         </ul>
                 </div>
             </li>
             <li>
-                <div class="buttons-img"><img src="{% static 'portfolio_main/img/na.png' %}" alt="B" /></div>
-                <a href="#popup_B" class="buttons-title"><h2>Titre B</h2></a>
+                <div class="buttons-img"><img src="{% static 'portfolio_main/img/style-transfer.png' %}" alt="Style Transfer" /></div>
+                <a href="#popup_B" class="buttons-title"><h2>neurartist</h2></a>
                 <div id="popup_B" class="buttons-details">
                     <div class="buttons-popup">
                         <a class="buttons-popup-close" href="#about">&times;</a>
-                        <h2>Titre B</h2>
+                        <h2>neurartist</h2>
                         <p>
                         {% blocktrans %}
-                        Une courte description du projet, de ce que j'y fais et de ce que ça m'apporte.
+                        Une implémentation PyTorch de deux publications de transfert de style : un algorithme neuronal capable d'appliquer à une photographie le style artistique d'une peinture.
                         {% endblocktrans %}
                         </p>
+                        <h3>{% trans "Sources" %}</h3>
+                        <ul>
+                            <li>L. A. Gatys, A. S. Ecker and M. Bethge, "Image Style Transfer Using Convolutional Neural Networks," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, 2016, pp. 2414-2423, doi: 10.1109/CVPR.2016.265.</li>
+                            <li>L. A. Gatys, A. S. Ecker, M. Bethge, A. Hertzmann and E. Shechtman, "Controlling Perceptual Factors in Neural Style Transfer," 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Honolulu, HI, 2017, pp. 3730-3738, doi: 10.1109/CVPR.2017.397.</li>
+                        </ul>
                         <ul class="buttons-details-links">
-                            <li><a href="#">{% trans "Site du projet" %}</a></li>
-                            <li><a href="#">{% trans "Réseaux sociaux" %}</a></li>
+                            <li><a href="https://github.com/gjorando/style-transfer">Github</a></li>
                         </ul>
                 </div>
             </li>
             <li>
-                <div class="buttons-img"><img src="{% static 'portfolio_main/img/na.png' %}" alt="C" /></div>
-                <a href="#popup_C" class="buttons-title"><h2>Titre C</h2></a>
+                <div class="buttons-img"><img src="{% static 'portfolio_main/img/minecraft-mod.png' %}" alt="Statues! & more!" /></div>
+                <a href="#popup_C" class="buttons-title"><h2>Statues! & more!</h2></a>
                 <div id="popup_C" class="buttons-details">
                     <div class="buttons-popup">
                         <a class="buttons-popup-close" href="#about">&times;</a>
-                        <h2>Titre C</h2>
+                        <h2>Statues! & more!</h2>
                         <p>
                         {% blocktrans %}
-                        Une courte description du projet, de ce que j'y fais et de ce que ça m'apporte.
+                        Un mod Minecraft, créé quand j'avais 15 ans, et qui a connu à l'époque un certain succès. Il a été le premier projet que j'ai mené de sa conception jusqu'à sa distribution, utilisant des liens de téléchargement monétisés pour récolter les fruits de mon travail.
                         {% endblocktrans %}
                         </p>
                         <ul class="buttons-details-links">
-                            <li><a href="#">{% trans "Site du projet" %}</a></li>
-                            <li><a href="#">{% trans "Réseaux sociaux" %}</a></li>
+                            <li><a href="https://github.com/gjorando/statues-and-more">Github</a></li>
                         </ul>
                 </div>
             </li>
             <li>
-                <div class="buttons-img"><img src="{% static 'portfolio_main/img/na.png' %}" alt="D" /></div>
-                <a href="#popup_D" class="buttons-title"><h2>Titre D</h2></a>
+                <div class="buttons-img"><img src="{% static 'portfolio_main/img/portal-js.png' %}" alt="Portal.js" /></div>
+                <a href="#popup_D" class="buttons-title"><h2>Portal2.js</h2></a>
                 <div id="popup_D" class="buttons-details">
                     <div class="buttons-popup">
                         <a class="buttons-popup-close" href="#about">&times;</a>
-                        <h2>Titre D</h2>
+                        <h2>Portal2.js</h2>
                         <p>
                         {% blocktrans %}
-                        Une courte description du projet, de ce que j'y fais et de ce que ça m'apporte.
+                        Une reconstruction fidèle du générique de fin de Portal 2, réalisée il y a bien trop longtemps en JavaScript.
                         {% endblocktrans %}
                         </p>
                         <ul class="buttons-details-links">
-                            <li><a href="#">{% trans "Site du projet" %}</a></li>
-                            <li><a href="#">{% trans "Réseaux sociaux" %}</a></li>
+                            <li><a href="https://glados.intensifi.es/">{% trans "Site web" %}</a></li>
+                            <li><a href="https://github.com/gjorando/portal2.js">Github</a></li>
                         </ul>
                 </div>
             </li>

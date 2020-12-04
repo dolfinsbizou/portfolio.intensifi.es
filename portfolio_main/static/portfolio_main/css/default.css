@@ -488,17 +488,19 @@ footer p
 
     .buttons-title h2
     {
+        padding: 0.15em;
         text-align: left;
         font-size: 2em;
-        top: 3%;
-        left: 3%;
         transform: translate(0, 0);
+        color: #FBF9FF;
+        text-shadow: 2px 2px 5px black;
     }
 
     .buttons-title
     {
         background: #B3B7EE00;
         opacity: 1;
+        align-items: start;
     }
 
     .buttons-popup
